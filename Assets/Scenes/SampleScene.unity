@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b5ef2c60dcd174636a436c1d4620d54f, type: 2}
 --- !u!1 &59391341
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,12 +135,12 @@ GameObject:
   - component: {fileID: 59391345}
   - component: {fileID: 59391344}
   - component: {fileID: 59391343}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &59391342
 Transform:
@@ -231,12 +231,12 @@ GameObject:
   - component: {fileID: 77088461}
   - component: {fileID: 77088460}
   - component: {fileID: 77088459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &77088458
 Transform:
@@ -327,12 +327,12 @@ GameObject:
   - component: {fileID: 98493867}
   - component: {fileID: 98493866}
   - component: {fileID: 98493865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &98493864
 Transform:
@@ -423,12 +423,12 @@ GameObject:
   - component: {fileID: 112796842}
   - component: {fileID: 112796841}
   - component: {fileID: 112796840}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &112796839
 Transform:
@@ -519,12 +519,12 @@ GameObject:
   - component: {fileID: 117056605}
   - component: {fileID: 117056604}
   - component: {fileID: 117056603}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &117056602
 Transform:
@@ -603,6 +603,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117056601}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &168802478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 168802479}
+  m_Layer: 0
+  m_Name: Waypoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168802479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168802478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7, y: 0, z: -4.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &206903805
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,12 +645,12 @@ GameObject:
   - component: {fileID: 206903809}
   - component: {fileID: 206903808}
   - component: {fileID: 206903807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &206903806
 Transform:
@@ -711,12 +741,12 @@ GameObject:
   - component: {fileID: 266313389}
   - component: {fileID: 266313388}
   - component: {fileID: 266313387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &266313386
 Transform:
@@ -807,12 +837,12 @@ GameObject:
   - component: {fileID: 362250675}
   - component: {fileID: 362250674}
   - component: {fileID: 362250673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &362250672
 Transform:
@@ -903,12 +933,12 @@ GameObject:
   - component: {fileID: 379068100}
   - component: {fileID: 379068099}
   - component: {fileID: 379068098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &379068097
 Transform:
@@ -999,12 +1029,12 @@ GameObject:
   - component: {fileID: 391047685}
   - component: {fileID: 391047684}
   - component: {fileID: 391047683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &391047682
 Transform:
@@ -1095,12 +1125,12 @@ GameObject:
   - component: {fileID: 399123841}
   - component: {fileID: 399123840}
   - component: {fileID: 399123839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &399123838
 Transform:
@@ -1191,12 +1221,12 @@ GameObject:
   - component: {fileID: 409179668}
   - component: {fileID: 409179667}
   - component: {fileID: 409179666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &409179665
 Transform:
@@ -1287,8 +1317,11 @@ GameObject:
   - component: {fileID: 415446581}
   - component: {fileID: 415446580}
   - component: {fileID: 415446579}
+  - component: {fileID: 415446585}
+  - component: {fileID: 415446584}
+  - component: {fileID: 415446583}
   m_Layer: 0
-  m_Name: Player2
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1371,6 +1404,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &415446583
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415446578}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &415446584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415446578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c30cd050a53143baa708e772e4ccc84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 0}
+  startWaitTime: 4
+  timeToRotate: 2
+  speedWalk: 12
+  speedRun: 12
+  viewRadius: 90
+  viewAngle: 90
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
+  meshResolution: 1
+  edgeIterations: 4
+  edgeDistance: 0.5
+  waypoints:
+  - {fileID: 802362255}
+  - {fileID: 168802479}
+  - {fileID: 877928277}
+  - {fileID: 885948841}
+  - {fileID: 962072407}
+  - {fileID: 823877444}
+  - {fileID: 1090027364}
+  - {fileID: 2100832848}
+  - {fileID: 1432853058}
+--- !u!54 &415446585
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415446578}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &439986150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,12 +1492,12 @@ GameObject:
   - component: {fileID: 439986154}
   - component: {fileID: 439986153}
   - component: {fileID: 439986152}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &439986151
 Transform:
@@ -1479,12 +1588,12 @@ GameObject:
   - component: {fileID: 470551553}
   - component: {fileID: 470551552}
   - component: {fileID: 470551551}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &470551550
 Transform:
@@ -1575,12 +1684,12 @@ GameObject:
   - component: {fileID: 483875638}
   - component: {fileID: 483875637}
   - component: {fileID: 483875636}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &483875635
 Transform:
@@ -1671,12 +1780,12 @@ GameObject:
   - component: {fileID: 522296582}
   - component: {fileID: 522296581}
   - component: {fileID: 522296580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &522296579
 Transform:
@@ -1767,12 +1876,12 @@ GameObject:
   - component: {fileID: 542489689}
   - component: {fileID: 542489688}
   - component: {fileID: 542489687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &542489686
 Transform:
@@ -1863,12 +1972,12 @@ GameObject:
   - component: {fileID: 611014688}
   - component: {fileID: 611014687}
   - component: {fileID: 611014686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &611014685
 Transform:
@@ -1959,12 +2068,12 @@ GameObject:
   - component: {fileID: 636270262}
   - component: {fileID: 636270261}
   - component: {fileID: 636270260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &636270259
 Transform:
@@ -2055,12 +2164,12 @@ GameObject:
   - component: {fileID: 679003916}
   - component: {fileID: 679003915}
   - component: {fileID: 679003914}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &679003913
 Transform:
@@ -2151,12 +2260,12 @@ GameObject:
   - component: {fileID: 695356044}
   - component: {fileID: 695356043}
   - component: {fileID: 695356042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &695356041
 Transform:
@@ -2340,12 +2449,12 @@ GameObject:
   - component: {fileID: 788357516}
   - component: {fileID: 788357515}
   - component: {fileID: 788357514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &788357513
 Transform:
@@ -2436,12 +2545,12 @@ GameObject:
   - component: {fileID: 790411834}
   - component: {fileID: 790411833}
   - component: {fileID: 790411832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &790411831
 Transform:
@@ -2532,12 +2641,12 @@ GameObject:
   - component: {fileID: 793407386}
   - component: {fileID: 793407385}
   - component: {fileID: 793407384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!136 &793407384
 CapsuleCollider:
@@ -2628,12 +2737,12 @@ GameObject:
   - component: {fileID: 802076558}
   - component: {fileID: 802076557}
   - component: {fileID: 802076556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &802076555
 Transform:
@@ -2712,6 +2821,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802076554}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &802362254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802362255}
+  m_Layer: 0
+  m_Name: Waypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802362255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802362254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43, y: 0, z: -18.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &823877443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823877444}
+  m_Layer: 0
+  m_Name: Waypoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823877444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823877443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42, y: 0, z: -2.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &852626265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,12 +2986,12 @@ GameObject:
   - component: {fileID: 857844623}
   - component: {fileID: 857844622}
   - component: {fileID: 857844621}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &857844620
 Transform:
@@ -2913,12 +3082,12 @@ GameObject:
   - component: {fileID: 873517515}
   - component: {fileID: 873517514}
   - component: {fileID: 873517513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &873517512
 Transform:
@@ -2997,6 +3166,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873517511}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &877928276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877928277}
+  m_Layer: 0
+  m_Name: Waypoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &877928277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877928276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.8, y: 0, z: 35.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &885948840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885948841}
+  m_Layer: 0
+  m_Name: Waypoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885948841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885948840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42, y: 0, z: 35.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &941218797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,12 +3238,12 @@ GameObject:
   - component: {fileID: 941218801}
   - component: {fileID: 941218800}
   - component: {fileID: 941218799}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &941218798
 Transform:
@@ -3093,6 +3322,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941218797}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &962072406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962072407}
+  m_Layer: 0
+  m_Name: Waypoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962072407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962072406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42, y: 0, z: -42.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,7 +3364,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3203,12 +3462,12 @@ GameObject:
   - component: {fileID: 1004426247}
   - component: {fileID: 1004426246}
   - component: {fileID: 1004426245}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1004426244
 Transform:
@@ -3298,9 +3557,9 @@ GameObject:
   - component: {fileID: 1037707623}
   - component: {fileID: 1037707622}
   - component: {fileID: 1037707624}
-  m_Layer: 0
-  m_Name: FirstPersonP1
-  m_TagString: Untagged
+  m_Layer: 6
+  m_Name: FirstPerson
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3361,6 +3620,36 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1090027363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090027364}
+  m_Layer: 0
+  m_Name: Waypoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1090027364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090027363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.5, y: 0, z: 16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118341013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,12 +3662,12 @@ GameObject:
   - component: {fileID: 1118341017}
   - component: {fileID: 1118341016}
   - component: {fileID: 1118341015}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1118341014
 Transform:
@@ -3469,12 +3758,12 @@ GameObject:
   - component: {fileID: 1136017937}
   - component: {fileID: 1136017936}
   - component: {fileID: 1136017935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1136017934
 Transform:
@@ -3565,12 +3854,12 @@ GameObject:
   - component: {fileID: 1142517398}
   - component: {fileID: 1142517397}
   - component: {fileID: 1142517396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1142517395
 Transform:
@@ -3661,12 +3950,12 @@ GameObject:
   - component: {fileID: 1262877595}
   - component: {fileID: 1262877594}
   - component: {fileID: 1262877593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1262877592
 Transform:
@@ -3757,12 +4046,12 @@ GameObject:
   - component: {fileID: 1269349330}
   - component: {fileID: 1269349329}
   - component: {fileID: 1269349328}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1269349327
 Transform:
@@ -3853,12 +4142,12 @@ GameObject:
   - component: {fileID: 1291426861}
   - component: {fileID: 1291426860}
   - component: {fileID: 1291426859}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1291426858
 Transform:
@@ -3949,12 +4238,12 @@ GameObject:
   - component: {fileID: 1294124323}
   - component: {fileID: 1294124322}
   - component: {fileID: 1294124321}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1294124320
 Transform:
@@ -4045,12 +4334,12 @@ GameObject:
   - component: {fileID: 1307134210}
   - component: {fileID: 1307134209}
   - component: {fileID: 1307134208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1307134207
 Transform:
@@ -4141,12 +4430,12 @@ GameObject:
   - component: {fileID: 1313614071}
   - component: {fileID: 1313614070}
   - component: {fileID: 1313614069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1313614068
 Transform:
@@ -4237,12 +4526,12 @@ GameObject:
   - component: {fileID: 1344679550}
   - component: {fileID: 1344679549}
   - component: {fileID: 1344679548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1344679547
 Transform:
@@ -4333,12 +4622,12 @@ GameObject:
   - component: {fileID: 1402126550}
   - component: {fileID: 1402126549}
   - component: {fileID: 1402126548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1402126547
 Transform:
@@ -4429,12 +4718,12 @@ GameObject:
   - component: {fileID: 1423220453}
   - component: {fileID: 1423220452}
   - component: {fileID: 1423220451}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1423220450
 Transform:
@@ -4525,12 +4814,12 @@ GameObject:
   - component: {fileID: 1427061233}
   - component: {fileID: 1427061232}
   - component: {fileID: 1427061231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1427061230
 Transform:
@@ -4609,6 +4898,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427061229}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1432853057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432853058}
+  m_Layer: 0
+  m_Name: Waypoint (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432853058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432853057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.9, y: 0, z: -17.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521246872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,12 +4940,12 @@ GameObject:
   - component: {fileID: 1521246876}
   - component: {fileID: 1521246875}
   - component: {fileID: 1521246874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1521246873
 Transform:
@@ -4717,12 +5036,12 @@ GameObject:
   - component: {fileID: 1554778288}
   - component: {fileID: 1554778287}
   - component: {fileID: 1554778286}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1554778285
 Transform:
@@ -4813,12 +5132,12 @@ GameObject:
   - component: {fileID: 1556311279}
   - component: {fileID: 1556311278}
   - component: {fileID: 1556311277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1556311276
 Transform:
@@ -4909,12 +5228,12 @@ GameObject:
   - component: {fileID: 1618492831}
   - component: {fileID: 1618492830}
   - component: {fileID: 1618492829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1618492828
 Transform:
@@ -5005,12 +5324,12 @@ GameObject:
   - component: {fileID: 1625712388}
   - component: {fileID: 1625712387}
   - component: {fileID: 1625712386}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1625712385
 Transform:
@@ -5101,12 +5420,12 @@ GameObject:
   - component: {fileID: 1678791579}
   - component: {fileID: 1678791578}
   - component: {fileID: 1678791577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1678791576
 Transform:
@@ -5197,12 +5516,12 @@ GameObject:
   - component: {fileID: 1679861822}
   - component: {fileID: 1679861821}
   - component: {fileID: 1679861820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1679861819
 Transform:
@@ -5293,12 +5612,12 @@ GameObject:
   - component: {fileID: 1716595182}
   - component: {fileID: 1716595181}
   - component: {fileID: 1716595180}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1716595179
 Transform:
@@ -5389,12 +5708,12 @@ GameObject:
   - component: {fileID: 1745122344}
   - component: {fileID: 1745122343}
   - component: {fileID: 1745122342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1745122341
 Transform:
@@ -5485,12 +5804,12 @@ GameObject:
   - component: {fileID: 1798565800}
   - component: {fileID: 1798565799}
   - component: {fileID: 1798565798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1798565797
 Transform:
@@ -5581,12 +5900,12 @@ GameObject:
   - component: {fileID: 1810363853}
   - component: {fileID: 1810363852}
   - component: {fileID: 1810363851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1810363850
 Transform:
@@ -5677,12 +5996,12 @@ GameObject:
   - component: {fileID: 1851495896}
   - component: {fileID: 1851495895}
   - component: {fileID: 1851495894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1851495893
 Transform:
@@ -5773,12 +6092,12 @@ GameObject:
   - component: {fileID: 1881985717}
   - component: {fileID: 1881985716}
   - component: {fileID: 1881985715}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1881985714
 Transform:
@@ -5869,12 +6188,12 @@ GameObject:
   - component: {fileID: 1887229845}
   - component: {fileID: 1887229844}
   - component: {fileID: 1887229843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1887229842
 Transform:
@@ -5965,12 +6284,12 @@ GameObject:
   - component: {fileID: 1906939133}
   - component: {fileID: 1906939132}
   - component: {fileID: 1906939131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1906939130
 Transform:
@@ -6061,12 +6380,12 @@ GameObject:
   - component: {fileID: 1909831929}
   - component: {fileID: 1909831928}
   - component: {fileID: 1909831927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1909831926
 Transform:
@@ -6157,12 +6476,12 @@ GameObject:
   - component: {fileID: 1962219375}
   - component: {fileID: 1962219374}
   - component: {fileID: 1962219373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1962219372
 Transform:
@@ -6253,12 +6572,12 @@ GameObject:
   - component: {fileID: 1986195247}
   - component: {fileID: 1986195246}
   - component: {fileID: 1986195245}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1986195244
 Transform:
@@ -6349,12 +6668,12 @@ GameObject:
   - component: {fileID: 1997558334}
   - component: {fileID: 1997558333}
   - component: {fileID: 1997558332}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1997558331
 Transform:
@@ -6445,12 +6764,12 @@ GameObject:
   - component: {fileID: 2038547476}
   - component: {fileID: 2038547475}
   - component: {fileID: 2038547474}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2038547473
 Transform:
@@ -6538,7 +6857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063669090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6571,12 +6890,12 @@ GameObject:
   - component: {fileID: 2075168137}
   - component: {fileID: 2075168136}
   - component: {fileID: 2075168135}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2075168134
 Transform:
@@ -6655,6 +6974,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075168133}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2100832847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100832848}
+  m_Layer: 0
+  m_Name: Waypoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2100832848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100832847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.5, y: 0, z: -17.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101257206
 GameObject:
   m_ObjectHideFlags: 0
@@ -6664,12 +7013,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101257207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2101257207
 Transform:
@@ -6761,12 +7110,12 @@ GameObject:
   - component: {fileID: 2110989539}
   - component: {fileID: 2110989538}
   - component: {fileID: 2110989537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2110989536
 Transform:
@@ -6875,12 +7224,12 @@ GameObject:
   m_Component:
   - component: {fileID: 916741814412974544}
   - component: {fileID: 31452167158017088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (27)
   m_TagString: wall70
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &31452167158017088
 BoxCollider:
@@ -6945,12 +7294,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4989190936793061469}
   - component: {fileID: 159518831763280347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &159518831763280347
 MonoBehaviour:
@@ -7066,12 +7415,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2845537937268989872}
   - component: {fileID: 463047640422662344}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (37)
   m_TagString: wall38
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &463047640422662344
 BoxCollider:
@@ -7110,12 +7459,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2975553907023856969}
   - component: {fileID: 503849387993862515}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (3)
   m_TagString: wall46
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &503849387993862515
 BoxCollider:
@@ -7140,12 +7489,12 @@ GameObject:
   m_Component:
   - component: {fileID: 884329419315775289}
   - component: {fileID: 544122853421731912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &544122853421731912
 MonoBehaviour:
@@ -7210,12 +7559,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3627783245834959402}
   - component: {fileID: 565355572369258745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (13)
   m_TagString: wall56
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &565355572369258745
 BoxCollider:
@@ -7268,12 +7617,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7654221066556326816}
   - component: {fileID: 648233413108906450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (29)
   m_TagString: wall72
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &648233413108906450
 BoxCollider:
@@ -7319,12 +7668,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1989403190992143450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &717208917770835917
 Transform:
@@ -7398,12 +7747,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4116163301054246653}
   - component: {fileID: 875498019323477008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (28)
   m_TagString: wall71
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &875498019323477008
 BoxCollider:
@@ -7448,12 +7797,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3927445864796271747}
   - component: {fileID: 886510908333320925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (26)
   m_TagString: wall27
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &886510908333320925
 BoxCollider:
@@ -7520,12 +7869,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3728714474394702286}
   - component: {fileID: 962950194826222711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (9)
   m_TagString: wall10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &962950194826222711
 BoxCollider:
@@ -7578,12 +7927,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8688442562751384802}
   - component: {fileID: 1094309344300827989}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (35)
   m_TagString: wall78
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1094309344300827989
 BoxCollider:
@@ -7608,12 +7957,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7188248874315916038}
   - component: {fileID: 1115868225262224963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (5)
   m_TagString: wall6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1115868225262224963
 BoxCollider:
@@ -7638,12 +7987,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1733292846583276530}
   - component: {fileID: 1125672440989372021}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (16)
   m_TagString: wall59
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1125672440989372021
 BoxCollider:
@@ -7750,12 +8099,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3061231438325781570}
   - component: {fileID: 1214761479505798722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (18)
   m_TagString: wall61
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1214761479505798722
 BoxCollider:
@@ -7780,12 +8129,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5047167896929720124}
   - component: {fileID: 1249133944849939827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (11)
   m_TagString: wall54
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1249133944849939827
 BoxCollider:
@@ -7810,12 +8159,12 @@ GameObject:
   m_Component:
   - component: {fileID: 941184934467132729}
   - component: {fileID: 1250587469044217966}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (28)
   m_TagString: wall29
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1250587469044217966
 BoxCollider:
@@ -7909,12 +8258,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7649169260242582740}
   - component: {fileID: 1439432381037858176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (36)
   m_TagString: wall79
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1439432381037858176
 BoxCollider:
@@ -7939,12 +8288,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7236005142555965779}
   - component: {fileID: 1484900569690084255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (4)
   m_TagString: wall47
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1484900569690084255
 BoxCollider:
@@ -7971,12 +8320,12 @@ GameObject:
   - component: {fileID: 3290794196986152428}
   - component: {fileID: 3832349747425820574}
   - component: {fileID: 4633087336478105684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1527111234617854976
 Transform:
@@ -8021,12 +8370,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4270046455394117818}
   - component: {fileID: 1546837923491984604}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (31)
   m_TagString: wall74
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1546837923491984604
 BoxCollider:
@@ -8105,12 +8454,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3601691892802130376}
   - component: {fileID: 1600409937121767238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (5)
   m_TagString: wall48
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1600409937121767238
 BoxCollider:
@@ -8137,12 +8486,12 @@ GameObject:
   - component: {fileID: 3947355234590386805}
   - component: {fileID: 3747932386523769539}
   - component: {fileID: 3929214422905978146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1620258822830633958
 Transform:
@@ -8229,12 +8578,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6970604498090612357}
   - component: {fileID: 1762157398131031486}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1762157398131031486
 MonoBehaviour:
@@ -8267,12 +8616,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7982692024068907110}
   - component: {fileID: 1878240256807286417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1878240256807286417
 MonoBehaviour:
@@ -8360,12 +8709,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2000612103098408446}
   - component: {fileID: 1960106732789158921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (13)
   m_TagString: wall14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1960106732789158921
 BoxCollider:
@@ -8390,12 +8739,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5117706829373882194}
   - component: {fileID: 1987365145792274559}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (18)
   m_TagString: wall19
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1987365145792274559
 BoxCollider:
@@ -8468,12 +8817,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7335238901918220796}
   - component: {fileID: 2210394131488681354}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &2210394131488681354
 MonoBehaviour:
@@ -8506,12 +8855,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2015285055645584901}
   - component: {fileID: 2213676338528376679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (39)
   m_TagString: wall40
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2213676338528376679
 BoxCollider:
@@ -8639,12 +8988,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8860468805717121178}
   - component: {fileID: 2518612698276711073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (9)
   m_TagString: wall52
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2518612698276711073
 BoxCollider:
@@ -8712,7 +9061,7 @@ GameObject:
   - component: {fileID: 2257209204784201623}
   - component: {fileID: 8949098625152335142}
   - component: {fileID: 108618453935340740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8742,12 +9091,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7043665837295639661}
   - component: {fileID: 2601551529564695230}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (41)
   m_TagString: wall42
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2601551529564695230
 BoxCollider:
@@ -8820,12 +9169,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3847477832212424774}
   - component: {fileID: 2794038499669204281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (25)
   m_TagString: wall68
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2794038499669204281
 BoxCollider:
@@ -8864,12 +9213,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7752110957775620844}
   - component: {fileID: 2908395483162510242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (32)
   m_TagString: wall75
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &2908395483162510242
 BoxCollider:
@@ -8907,12 +9256,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8118529873681927519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwallTags
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2998551522515459366
 Transform:
@@ -8938,12 +9287,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8940039555626901119}
   - component: {fileID: 3013928095712233670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (16)
   m_TagString: wall17
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3013928095712233670
 BoxCollider:
@@ -9012,12 +9361,12 @@ GameObject:
   - component: {fileID: 4932969745036451392}
   - component: {fileID: 6353509278305669142}
   - component: {fileID: 561183870072573072}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3290794196986152428
 MeshFilter:
@@ -9039,7 +9388,7 @@ GameObject:
   - component: {fileID: 8725146446540513121}
   - component: {fileID: 6813866650899888834}
   - component: {fileID: 5538004679557138507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9056,12 +9405,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4390019103538665134}
   - component: {fileID: 3338626599070076686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (39)
   m_TagString: wall82
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3338626599070076686
 BoxCollider:
@@ -9085,12 +9434,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2790934656991857974}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3394305583173974155
 GameObject:
@@ -9102,12 +9451,12 @@ GameObject:
   m_Component:
   - component: {fileID: 890678565485733659}
   - component: {fileID: 3394305583173974156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (21)
   m_TagString: wall64
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3394305583173974156
 BoxCollider:
@@ -9153,7 +9502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1545979322696988595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9186,12 +9535,12 @@ GameObject:
   - component: {fileID: 8115286235700033183}
   - component: {fileID: 3559033210043575293}
   - component: {fileID: 5521362239271586368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3550843794137629892
 GameObject:
@@ -9203,12 +9552,12 @@ GameObject:
   m_Component:
   - component: {fileID: 9210702455651902826}
   - component: {fileID: 3550843794137629893}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (21)
   m_TagString: wall22
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3550843794137629893
 BoxCollider:
@@ -9233,12 +9582,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8551906573035181585}
   - component: {fileID: 3554822242262065596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (34)
   m_TagString: wall35
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3554822242262065596
 BoxCollider:
@@ -9304,12 +9653,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8212779856030548063}
   - component: {fileID: 3566503426921916590}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (10)
   m_TagString: wall11
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3566503426921916590
 BoxCollider:
@@ -9430,12 +9779,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1014226209448831489}
   - component: {fileID: 3747919301578282602}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (8)
   m_TagString: wall9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3747919301578282602
 BoxCollider:
@@ -9570,12 +9919,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3015751052665375025}
   - component: {fileID: 3880923979778505672}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (37)
   m_TagString: wall80
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &3880923979778505672
 BoxCollider:
@@ -9602,12 +9951,12 @@ GameObject:
   - component: {fileID: 6977107284018128704}
   - component: {fileID: 8995892495973883327}
   - component: {fileID: 4318150093352198157}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3926755637029295691
 Transform:
@@ -9690,12 +10039,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8867738684936336681}
   - component: {fileID: 4070055818952018933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &4070055818952018933
 MonoBehaviour:
@@ -9742,12 +10091,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7895896253458765935}
   - component: {fileID: 4104187698603913478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (34)
   m_TagString: wall77
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4104187698603913478
 BoxCollider:
@@ -9788,7 +10137,7 @@ GameObject:
   - component: {fileID: 5286386756056964303}
   - component: {fileID: 7152139319415066701}
   - component: {fileID: 2288347139951202118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9805,12 +10154,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6956993441932027678}
   - component: {fileID: 4164225648136337241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &4164225648136337241
 MonoBehaviour:
@@ -9857,12 +10206,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4708260877925520792}
   - component: {fileID: 4185919001606628366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (26)
   m_TagString: wall69
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4185919001606628366
 BoxCollider:
@@ -9889,12 +10238,12 @@ GameObject:
   - component: {fileID: 8989798449796311491}
   - component: {fileID: 1425318836534309657}
   - component: {fileID: 2315092490324290714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &4239198447428922075
 GameObject:
@@ -9906,12 +10255,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3668743295405995811}
   - component: {fileID: 4239198447428922076}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &4239198447428922076
 MonoBehaviour:
@@ -10012,12 +10361,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8343476840729676247}
   - component: {fileID: 4355557262488667435}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (7)
   m_TagString: wall8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4355557262488667435
 BoxCollider:
@@ -10056,12 +10405,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6202710561242829695}
   - component: {fileID: 4470653609252778829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (40)
   m_TagString: wall41
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4470653609252778829
 BoxCollider:
@@ -10114,12 +10463,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8486217233078688852}
   - component: {fileID: 4622866893350420856}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (35)
   m_TagString: wall36
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4622866893350420856
 BoxCollider:
@@ -10157,12 +10506,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2701873813495490504}
   - component: {fileID: 4657360986431287509}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (20)
   m_TagString: wall21
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4657360986431287509
 BoxCollider:
@@ -10187,12 +10536,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4164615408616326067}
   - component: {fileID: 4673196507051532131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (15)
   m_TagString: wall58
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4673196507051532131
 BoxCollider:
@@ -10237,7 +10586,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4708260877925520792
 Transform:
@@ -10264,7 +10613,7 @@ GameObject:
   - component: {fileID: 7301909970172846343}
   - component: {fileID: 9177086306885371167}
   - component: {fileID: 6103386118633922365}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10281,12 +10630,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1527111234617854976}
   - component: {fileID: 4803155575536459989}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (11)
   m_TagString: wall12
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4803155575536459989
 BoxCollider:
@@ -10311,12 +10660,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6330554972041411568}
   - component: {fileID: 4823309721584866216}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (24)
   m_TagString: wall25
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4823309721584866216
 BoxCollider:
@@ -10341,12 +10690,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4041229238120121366}
   - component: {fileID: 4867005830882489382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (30)
   m_TagString: wall31
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4867005830882489382
 BoxCollider:
@@ -10371,12 +10720,12 @@ GameObject:
   m_Component:
   - component: {fileID: 340495890823504117}
   - component: {fileID: 4871293550549264919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (20)
   m_TagString: wall63
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4871293550549264919
 BoxCollider:
@@ -10465,12 +10814,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5852778163956377515}
   - component: {fileID: 4995705302988412909}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (17)
   m_TagString: wall60
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &4995705302988412909
 BoxCollider:
@@ -10495,12 +10844,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5625847215486853264}
   - component: {fileID: 5000673978151904638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &5000673978151904638
 MonoBehaviour:
@@ -10533,12 +10882,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4975639322562504160}
   - component: {fileID: 5033009920190595150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (24)
   m_TagString: wall67
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5033009920190595150
 BoxCollider:
@@ -10565,12 +10914,12 @@ GameObject:
   - component: {fileID: 6284805211813882015}
   - component: {fileID: 2466181781361369828}
   - component: {fileID: 4675272848905922375}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5047167896929720124
 Transform:
@@ -10598,12 +10947,12 @@ GameObject:
   - component: {fileID: 6349942314518624244}
   - component: {fileID: 4263016780454068079}
   - component: {fileID: 1207286931646593436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5084144693668045444
 GameObject:
@@ -10615,12 +10964,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6830099434523366232}
   - component: {fileID: 5084144693668045445}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (1)
   m_TagString: wall44
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5084144693668045445
 BoxCollider:
@@ -10659,12 +11008,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1326173920417333431}
   - component: {fileID: 5118448572691062839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (38)
   m_TagString: wall39
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5118448572691062839
 BoxCollider:
@@ -10689,12 +11038,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8419326078543924932}
   - component: {fileID: 5205864593748534106}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (6)
   m_TagString: wall49
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5205864593748534106
 BoxCollider:
@@ -10749,7 +11098,7 @@ GameObject:
   - component: {fileID: 685226161139973126}
   - component: {fileID: 7287633853086040539}
   - component: {fileID: 2581888350001202106}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10766,12 +11115,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8469246059598679185}
   - component: {fileID: 5252454577227129819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (4)
   m_TagString: wall5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5252454577227129819
 BoxCollider:
@@ -10796,12 +11145,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6282470613154668741}
   - component: {fileID: 5266749690208038167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (19)
   m_TagString: wall20
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5266749690208038167
 BoxCollider:
@@ -10834,12 +11183,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6034933140208037136}
   - component: {fileID: 5386065728310166463}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &5386065728310166463
 MonoBehaviour:
@@ -10872,12 +11221,12 @@ GameObject:
   m_Component:
   - component: {fileID: 298886870146946192}
   - component: {fileID: 5511439159568296835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (23)
   m_TagString: wall24
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5511439159568296835
 BoxCollider:
@@ -10917,12 +11266,12 @@ GameObject:
   - component: {fileID: 6665850048991213818}
   - component: {fileID: 5599794965249066376}
   - component: {fileID: 1588406531107689206}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5538004679557138507
 BoxCollider:
@@ -10947,12 +11296,12 @@ GameObject:
   m_Component:
   - component: {fileID: 717208917770835917}
   - component: {fileID: 5550401169773390543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &5550401169773390543
 MonoBehaviour:
@@ -10985,12 +11334,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3685491968137148738}
   - component: {fileID: 5591868271948322201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &5591868271948322201
 MonoBehaviour:
@@ -11023,12 +11372,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8785332582948952340}
   - component: {fileID: 5599314806033684207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (14)
   m_TagString: wall15
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5599314806033684207
 BoxCollider:
@@ -11114,12 +11463,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8438935197375421169}
   - component: {fileID: 5812219813108492861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (22)
   m_TagString: wall65
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5812219813108492861
 BoxCollider:
@@ -11144,12 +11493,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1744194486451148285}
   - component: {fileID: 5828695712251420962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &5828695712251420962
 MonoBehaviour:
@@ -11210,12 +11559,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6724510119813182244}
   - component: {fileID: 5907020725996676167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (22)
   m_TagString: wall23
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5907020725996676167
 BoxCollider:
@@ -11240,12 +11589,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3477397134218143184}
   - component: {fileID: 5952722986669116589}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (30)
   m_TagString: wall73
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &5952722986669116589
 BoxCollider:
@@ -11304,12 +11653,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3748457519044311791}
   - component: {fileID: 6047287296500130164}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (2)
   m_TagString: wall45
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6047287296500130164
 BoxCollider:
@@ -11383,12 +11732,12 @@ GameObject:
   m_Component:
   - component: {fileID: 838039408785677627}
   - component: {fileID: 6154847157760082028}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (10)
   m_TagString: wall53
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6154847157760082028
 BoxCollider:
@@ -11413,12 +11762,12 @@ GameObject:
   m_Component:
   - component: {fileID: 379904923582548850}
   - component: {fileID: 6176969484233547442}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (31)
   m_TagString: wall32
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6176969484233547442
 BoxCollider:
@@ -11569,12 +11918,12 @@ GameObject:
   m_Component:
   - component: {fileID: 565857770725929694}
   - component: {fileID: 6515403174779299722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (33)
   m_TagString: wall76
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6515403174779299722
 BoxCollider:
@@ -11613,12 +11962,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4601933154725145129}
   - component: {fileID: 6596071460826936996}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall
   m_TagString: wall43
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6596071460826936996
 BoxCollider:
@@ -11665,12 +12014,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1313660646901225958}
   - component: {fileID: 6725414356283609778}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (12)
   m_TagString: wall13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6725414356283609778
 BoxCollider:
@@ -11695,12 +12044,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3619866484456371739}
   - component: {fileID: 6798461191374598454}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (33)
   m_TagString: wall34
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6798461191374598454
 BoxCollider:
@@ -11794,12 +12143,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1940656159885981223}
   - component: {fileID: 6868179967707146317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (41)
   m_TagString: wall84
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6868179967707146317
 BoxCollider:
@@ -11826,12 +12175,12 @@ GameObject:
   - component: {fileID: 6103673691412006533}
   - component: {fileID: 1180107085829145030}
   - component: {fileID: 9035535477751087188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6877119402243840710
 GameObject:
@@ -11843,12 +12192,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2744478413115215509}
   - component: {fileID: 6877119402243840711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (1)
   m_TagString: wall2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6877119402243840711
 BoxCollider:
@@ -11875,12 +12224,12 @@ GameObject:
   - component: {fileID: 7557570615470176666}
   - component: {fileID: 1576441803906223253}
   - component: {fileID: 6327197693165747387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6942345614819712458
 GameObject:
@@ -11892,12 +12241,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7399598635050677531}
   - component: {fileID: 6942345614819712459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &6942345614819712459
 BoxCollider:
@@ -11984,12 +12333,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5206217914381604620}
   - component: {fileID: 7133151018281213756}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (25)
   m_TagString: wall26
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7133151018281213756
 BoxCollider:
@@ -12111,12 +12460,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4560177053206533829}
   - component: {fileID: 7256323988513951712}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (19)
   m_TagString: wall62
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7256323988513951712
 BoxCollider:
@@ -12196,12 +12545,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1144120688692180175}
   - component: {fileID: 7322612001747823878}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (7)
   m_TagString: wall50
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7322612001747823878
 BoxCollider:
@@ -12246,12 +12595,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6804760139118076840}
   - component: {fileID: 7398162549113060069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (23)
   m_TagString: wall66
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7398162549113060069
 BoxCollider:
@@ -12347,12 +12696,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1187461593351178126}
   - component: {fileID: 7506723709194723130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall
   m_TagString: wall1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7506723709194723130
 BoxCollider:
@@ -12377,12 +12726,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6218149170012114460}
   - component: {fileID: 7513486405036933112}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (15)
   m_TagString: wall16
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7513486405036933112
 BoxCollider:
@@ -12521,12 +12870,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8676615568288984056}
   - component: {fileID: 7998215504579369943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (2)
   m_TagString: wall3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &7998215504579369943
 BoxCollider:
@@ -12551,12 +12900,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3926755637029295691}
   - component: {fileID: 8070030024225851022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (36)
   m_TagString: wall37
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8070030024225851022
 BoxCollider:
@@ -12631,12 +12980,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2359394709279613513}
   - component: {fileID: 8341494869715878579}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (12)
   m_TagString: wall55
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8341494869715878579
 BoxCollider:
@@ -12703,12 +13052,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3156188222271164740}
   - component: {fileID: 8468659360194437844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (14)
   m_TagString: wall57
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8468659360194437844
 BoxCollider:
@@ -12761,12 +13110,12 @@ GameObject:
   m_Component:
   - component: {fileID: 322529514120780036}
   - component: {fileID: 8545427809650158247}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (3)
   m_TagString: wall4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8545427809650158247
 BoxCollider:
@@ -12805,12 +13154,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2998551522515459366}
   - component: {fileID: 8585907945235963393}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (29)
   m_TagString: wall30
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8585907945235963393
 BoxCollider:
@@ -12915,7 +13264,7 @@ GameObject:
   - component: {fileID: 3449828467719787567}
   - component: {fileID: 7408633808248738067}
   - component: {fileID: 403922137106902135}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12932,12 +13281,12 @@ GameObject:
   m_Component:
   - component: {fileID: 57834832031949261}
   - component: {fileID: 8822962686934185742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (27)
   m_TagString: wall28
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8822962686934185742
 BoxCollider:
@@ -12996,12 +13345,12 @@ GameObject:
   m_Component:
   - component: {fileID: 752378611942974378}
   - component: {fileID: 8923127156654641954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (40)
   m_TagString: wall83
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8923127156654641954
 BoxCollider:
@@ -13081,12 +13430,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1620258822830633958}
   - component: {fileID: 8985519072101415610}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (8)
   m_TagString: wall51
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &8985519072101415610
 BoxCollider:
@@ -13162,12 +13511,12 @@ GameObject:
   - component: {fileID: 4985909064684968908}
   - component: {fileID: 1941680113298481870}
   - component: {fileID: 1719465552762285429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &9035535477751087188
 BoxCollider:
@@ -13192,12 +13541,12 @@ GameObject:
   m_Component:
   - component: {fileID: 631486019930244985}
   - component: {fileID: 9048813057009385796}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (17)
   m_TagString: wall18
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &9048813057009385796
 BoxCollider:
@@ -13222,12 +13571,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1068383442714657370}
   - component: {fileID: 9094596059452395123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (38)
   m_TagString: wall81
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &9094596059452395123
 BoxCollider:
@@ -13274,12 +13623,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1672534084995833272}
   - component: {fileID: 9187702072797289022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (32)
   m_TagString: wall33
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &9187702072797289022
 BoxCollider:
@@ -13304,12 +13653,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7918863450897581920}
   - component: {fileID: 9203643458540172616}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: randwall (6)
   m_TagString: wall7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &9203643458540172616
 BoxCollider:
@@ -13348,12 +13697,12 @@ GameObject:
   m_Component:
   - component: {fileID: 15314223235346094}
   - component: {fileID: 9211794890046239807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tags1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &9211794890046239807
 MonoBehaviour:
