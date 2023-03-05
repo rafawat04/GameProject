@@ -144,7 +144,7 @@ public class AIController : MonoBehaviour
  
     public void NextPoint()
     {
-        m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
+        m_CurrentWaypointIndex = (m_CurrentWaypointIndex +1) % waypoints.Length;
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
     }
  

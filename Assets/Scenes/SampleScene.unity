@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 0}
-  startWaitTime: 4
+  startWaitTime: 1
   timeToRotate: 2
   speedWalk: 12
   speedRun: 12
@@ -3559,7 +3559,7 @@ GameObject:
   - component: {fileID: 1037707624}
   m_Layer: 6
   m_Name: FirstPerson
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
