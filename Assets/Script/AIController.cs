@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;               //  Nav mesh agent component
-    public float startWaitTime = 1;                 //  Wait time of every action
+    public float startWaitTime = 0.5f;                 //  Wait time of every action
     public float timeToRotate = 2;                  //  Wait time when the enemy detect near the player without seeing
     public float speedWalk = 6;                     //  Walking speed, speed in the nav mesh agent
     public float speedRun = 9;                      //  Running speed
@@ -113,7 +113,7 @@ public class AIController : MonoBehaviour
     }
 
     private void Patroling()
-{
+    {
     if (m_PlayerNear)
     {
         // Check if the enemy detects the player nearby
@@ -137,68 +137,17 @@ public class AIController : MonoBehaviour
             Move(speedWalk);
             m_TimeToRotate = timeToRotate;
             m_WaitTime = startWaitTime;
-
-            
+           
 
             // Set the destination to the next waypoint in the shuffled array
             m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
             navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            
         }
     }
 
     // Set the NavMeshAgent's avoidance priority to avoid obstacles more aggressively
     navMeshAgent.avoidancePriority = 70;
-}
-
- 
-    // private void Patroling()
-    // {
-    //     if (m_PlayerNear)
-    //     {
-            
-    //         //  Check if the enemy detect near the player, so the enemy will move to that position
-    //         if (m_TimeToRotate <= 0)
-    //         {
-    //             Move(speedWalk);
-    //             LookingPlayer(playerLastPosition);
-    //         }
-    //         else
-    //         {
-    //             //  The enemy wait for a moment and then go to the last player position
-    //             Stop();
-    //             m_TimeToRotate -= Time.deltaTime;
-    //         }
-    //     }
-    //     else
-    //     {
-    //         m_PlayerNear = false;           //  The player is no near when the enemy is patroling
-    //         playerLastPosition = Vector3.zero;
-    //         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the enemy destination to the next waypoint
-    //         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-    //         {
-                
-    //             //  If the enemy arrives to the waypoint position then wait for a moment and go to the next
-    //             if (m_WaitTime <= 0)
-    //             {
-                    
-    //                 NextPoint();
-    //                 Debug.Log("move");
-    //                 Move(speedWalk);
-    //                 m_WaitTime = startWaitTime;
-    //             }
-    //             else
-    //             {
-    //                 Debug.Log("stop");
-    //                 Stop();
-    //                 m_WaitTime -= Time.deltaTime;
-    //             }
-    //         }
-    //     }
-    // }
- 
-    private void OnAnimatorMove()
-    {
- 
     }
  
     public void NextPoint()
