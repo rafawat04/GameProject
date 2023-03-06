@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;               //  Nav mesh agent component
-    public float startWaitTime = 4;                 //  Wait time of every action
+    public float startWaitTime = 1;                 //  Wait time of every action
     public float timeToRotate = 2;                  //  Wait time when the enemy detect near the player without seeing
     public float speedWalk = 6;                     //  Walking speed, speed in the nav mesh agent
     public float speedRun = 9;                      //  Running speed
@@ -48,11 +48,14 @@ public class AIController : MonoBehaviour
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speedWalk;             //  Set the navmesh speed with the normal speed of the enemy
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
+
+        // Shuffle the array of waypoints
+            Shuffle(waypoints);
     }
  
     private void Update()
     {
-            EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
+        EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
         if (!m_IsPatrol)
         {
@@ -96,46 +99,102 @@ public class AIController : MonoBehaviour
             }
         }
     }
- 
-    private void Patroling()
+
+    // Shuffle an array using Fisher-Yates algorithm
+    public static void Shuffle<T>(T[] array)
     {
-        if (m_PlayerNear)
+        for (int i = array.Length - 1; i > 0; i--)
         {
-            //  Check if the enemy detect near the player, so the enemy will move to that position
-            if (m_TimeToRotate <= 0)
-            {
-                Move(speedWalk);
-                LookingPlayer(playerLastPosition);
-            }
-            else
-            {
-                //  The enemy wait for a moment and then go to the last player position
-                Stop();
-                m_TimeToRotate -= Time.deltaTime;
-            }
+            int j = Random.Range(0, i + 1);
+            T temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
+        }
+    }
+
+    private void Patroling()
+{
+    if (m_PlayerNear)
+    {
+        // Check if the enemy detects the player nearby
+        if (m_TimeToRotate <= 0)
+        {
+            Move(speedWalk);
+            LookingPlayer(playerLastPosition);
         }
         else
         {
-            m_PlayerNear = false;           //  The player is no near when the enemy is patroling
-            playerLastPosition = Vector3.zero;
-            navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the enemy destination to the next waypoint
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                //  If the enemy arrives to the waypoint position then wait for a moment and go to the next
-                if (m_WaitTime <= 0)
-                {
-                    NextPoint();
-                    Move(speedWalk);
-                    m_WaitTime = startWaitTime;
-                }
-                else
-                {
-                    Stop();
-                    m_WaitTime -= Time.deltaTime;
-                }
-            }
+            Stop();
+            m_TimeToRotate -= Time.deltaTime;
         }
     }
+    else
+    {
+        // If the enemy is patrolling, set the destination to the next random waypoint
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            m_IsPatrol = true;
+            Move(speedWalk);
+            m_TimeToRotate = timeToRotate;
+            m_WaitTime = startWaitTime;
+
+            
+
+            // Set the destination to the next waypoint in the shuffled array
+            m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
+            navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+        }
+    }
+
+    // Set the NavMeshAgent's avoidance priority to avoid obstacles more aggressively
+    navMeshAgent.avoidancePriority = 70;
+}
+
+ 
+    // private void Patroling()
+    // {
+    //     if (m_PlayerNear)
+    //     {
+            
+    //         //  Check if the enemy detect near the player, so the enemy will move to that position
+    //         if (m_TimeToRotate <= 0)
+    //         {
+    //             Move(speedWalk);
+    //             LookingPlayer(playerLastPosition);
+    //         }
+    //         else
+    //         {
+    //             //  The enemy wait for a moment and then go to the last player position
+    //             Stop();
+    //             m_TimeToRotate -= Time.deltaTime;
+    //         }
+    //     }
+    //     else
+    //     {
+    //         m_PlayerNear = false;           //  The player is no near when the enemy is patroling
+    //         playerLastPosition = Vector3.zero;
+    //         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the enemy destination to the next waypoint
+    //         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+    //         {
+                
+    //             //  If the enemy arrives to the waypoint position then wait for a moment and go to the next
+    //             if (m_WaitTime <= 0)
+    //             {
+                    
+    //                 NextPoint();
+    //                 Debug.Log("move");
+    //                 Move(speedWalk);
+    //                 m_WaitTime = startWaitTime;
+    //             }
+    //             else
+    //             {
+    //                 Debug.Log("stop");
+    //                 Stop();
+    //                 m_WaitTime -= Time.deltaTime;
+    //             }
+    //         }
+    //     }
+    // }
  
     private void OnAnimatorMove()
     {
@@ -144,7 +203,7 @@ public class AIController : MonoBehaviour
  
     public void NextPoint()
     {
-        m_CurrentWaypointIndex = (m_CurrentWaypointIndex +1) % waypoints.Length;
+         m_CurrentWaypointIndex = (m_CurrentWaypointIndex +1) % waypoints.Length;
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
     }
  

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4362452991145603409}
   - component: {fileID: 723115403728161268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,8 @@ GameObject:
   - component: {fileID: 5320370656443684837}
   - component: {fileID: 6369705532321598908}
   - component: {fileID: 3704500370561217362}
-  m_Layer: 0
+  - component: {fileID: 7094583281751450431}
+  m_Layer: 7
   m_Name: randwall8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,3 +141,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &7094583281751450431
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8359665963120472075}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
