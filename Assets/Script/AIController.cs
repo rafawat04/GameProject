@@ -47,14 +47,17 @@ public class AIController : MonoBehaviour
  
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speedWalk;             //  Set the navmesh speed with the normal speed of the enemy
-        navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
+           //  Set the destination to the first waypoint
 
         // Shuffle the array of waypoints
             Shuffle(waypoints);
     }
+
+
  
     private void Update()
     {
+        
         EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
         if (!m_IsPatrol)

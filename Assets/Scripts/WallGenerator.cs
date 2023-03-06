@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WallGenerator : MonoBehaviour
-{
+{   
     public GameObject wallPrefab; // 生成する壁のプレハブ
     public string[] spawnTags; // 壁を生成する位置のタグのリスト
     public int numWalls = 3; // 生成する壁の数
 
+    // public NavMesh navMesh;
+
+    // public void RecalculateNavMesh()
+    // {
+    //     NavMeshBuilder.BuildNavMesh(navMesh.navMeshData, navMesh.GetBuildSettings());
+    // }
+    
     void Start()
     {
         for (int i = 0; i < numWalls; i++)
@@ -28,6 +36,9 @@ public class WallGenerator : MonoBehaviour
             float scale = Random.Range(0.5f, 2f);
             wall.transform.localScale = new Vector3(scale, scale, scale);
             */
+            // Add the NavMeshObstacle component to the wall object
+            // NavMeshObstacle navMeshObstacle = wall.AddComponent<NavMeshObstacle>();
+            // navMeshObstacle.carving = true;
         }
     }
 }

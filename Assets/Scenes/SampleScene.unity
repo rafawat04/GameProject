@@ -1442,7 +1442,7 @@ MonoBehaviour:
   startWaitTime: 1
   timeToRotate: 1
   speedWalk: 8
-  speedRun: 10
+  speedRun: 8
   viewRadius: 30
   viewAngle: 90
   playerMask:
@@ -1453,7 +1453,7 @@ MonoBehaviour:
     m_Bits: 128
   meshResolution: 1
   edgeIterations: 4
-  edgeDistance: 4
+  edgeDistance: 0.5
   waypoints:
   - {fileID: 802362255}
   - {fileID: 168802479}
@@ -9309,7 +9309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
