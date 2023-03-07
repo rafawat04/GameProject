@@ -55,6 +55,7 @@ public class AIController : MonoBehaviour
  
     private void Update()
     {
+        Debug.Log(navMeshAgent.isStopped);
         
         EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
@@ -81,7 +82,7 @@ public class AIController : MonoBehaviour
         }
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
         {
-                if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 6f)
+                if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
             {
                 //  Check if the enemy is not near to the player, returns to patrol after the wait time delay
                 m_IsPatrol = true;
