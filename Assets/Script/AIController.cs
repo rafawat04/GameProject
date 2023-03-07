@@ -52,8 +52,6 @@ public class AIController : MonoBehaviour
         // Shuffle the array of waypoints
             Shuffle(waypoints);
     }
-
-
  
     private void Update()
     {
