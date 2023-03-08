@@ -36,11 +36,7 @@ public class Shooting : MonoBehaviour {
             {
                 shotCount -= 1;
 
-            //     GameObject bullets = Instantiate(bullet, this.transform.position, ここにどんなQuaternionを入れる？);
-            // bullets.transform.parent = this.transform;
-
                 GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
-                // GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x, transform.parent.eulerAngles.y,0));
                 Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
                 bulletRb.AddForce(transform.forward * shotSpeed);
 
