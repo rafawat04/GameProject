@@ -88,6 +88,8 @@ TagManager:
   - wall82
   - wall83
   - wall84
+  - FxTemporaire
+  - Shell
   layers:
   - Default
   - TransparentFX
