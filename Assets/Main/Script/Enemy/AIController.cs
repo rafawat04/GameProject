@@ -17,8 +17,9 @@ public class AIController : MonoBehaviour
     public float meshResolution = 1.0f;             //  How many rays will cast per degree
     public int edgeIterations = 4;                  //  Number of iterations to get a better performance of the mesh filter when the raycast hit an obstacule
     public float edgeDistance = 0.5f;               //  Max distance to calcule the a minimun and a maximum raycast when hits something
- 
- 
+    
+    public EnemyShooting enemyShooting;
+
     public Transform[] waypoints;                   //  All the waypoints where the enemy patrols
     int m_CurrentWaypointIndex;                     //  Current waypoint where the enemy is going to
  
@@ -30,10 +31,11 @@ public class AIController : MonoBehaviour
     bool m_playerInRange;                           //  If the player is in range of vision, state of chasing
     bool m_PlayerNear;                              //  If the player is near, state of hearing
     bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
-    bool m_CaughtPlayer;                            //  if the enemy has caught the player
+    bool m_CaughtPlayer;       
+    bool chasing;                     //  if the enemy has caught the player
  
     void Start()
-    {
+    {   
         m_PlayerPosition = Vector3.zero;
         m_IsPatrol = true;
         m_CaughtPlayer = false;
@@ -55,17 +57,25 @@ public class AIController : MonoBehaviour
  
     private void Update()
     {
+        Debug.Log(navMeshAgent.isStopped);
         
         EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
         if (!m_IsPatrol)
         {
             Chasing();
+            chasing = true;
+             if(chasing)
+                {
+                    enemyShooting.Shoot();
+                }
         }
         else
         {
             Patroling();
         }
+
+       
     }
  
     private void Chasing()
@@ -81,7 +91,7 @@ public class AIController : MonoBehaviour
         }
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
         {
-                if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 6f)
+                if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
             {
                 //  Check if the enemy is not near to the player, returns to patrol after the wait time delay
                 m_IsPatrol = true;
