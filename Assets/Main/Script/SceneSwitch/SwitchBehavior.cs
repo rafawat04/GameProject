@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class SwitchBehavior : MonoBehaviour
 {
-    
-    private int hp = 1;
+    private int Enemyhp = 0;
+    private int Playerhp = 1;
     void Start()
     {
-        //HeadBackが押されたら最初に戻るので
-        //その時にHPも初期化されているから
-        //ゲーム中のCanvasになるはず
+        /*
         if(hp == 0) //戦闘中のCanvas playerHp 
         {
             GameObject Canvas = GameObject.Find ("Canvas");
@@ -19,17 +17,55 @@ public class SwitchBehavior : MonoBehaviour
             GameObject SwitchCanvas = GameObject.Find ("SwitchCanvas");
             SwitchCanvas.SetActive(false);
         }
+        */
         
-        //もしhpが0になったら
-    
-        //Canvasチェック外す
-        if(hp == 1) //戦闘終わった後のメニューCanvas
+        //勝ったのが敵か自分かの分岐
+
+        //もし自分が勝ったら        
+        if(Playerhp == 1) 
         {
-        GameObject Canvas = GameObject.Find ("Canvas");
-        Canvas.SetActive (false);
-        //switchCanvasチェックする
-        GameObject SwitchCanvas = GameObject.Find ("SwitchCanvas");
-        SwitchCanvas.SetActive (true);
+            GameObject Win = GameObject.Find ("win");
+
+            Win.SetActive (true);
+
+            GameObject Lose = GameObject.Find ("lose");
+            Lose.SetActive (false);
+
+            //Canvasオブジェクトの検索    
+            GameObject Canvas = GameObject.Find ("Canvas");
+
+            // チェックマークを外して非表示にする
+            Canvas.SetActive (false);
+            
+            //SwitchCanvasオブジェクトの検索
+            GameObject SwitchCanvas = GameObject.Find ("SwitchCanvas");
+
+            //チェックマークを付けて表示にする
+            SwitchCanvas.SetActive (true);
+
+        //もし敵が勝ったら
+        }else if(Enemyhp == 1)
+        {
+
+            GameObject Win = GameObject.Find ("win");
+
+            Win.SetActive (false);
+
+            GameObject Lose = GameObject.Find ("lose");
+
+            Lose.SetActive (true);
+
+            //Canvasオブジェクトの検索    
+            GameObject Canvas = GameObject.Find ("Canvas");
+
+            // チェックマークを外して非表示にする
+            Canvas.SetActive (false);
+            
+            //SwitchCanvasオブジェクトの検索
+            GameObject SwitchCanvas = GameObject.Find ("SwitchCanvas");
+
+            //チェックマークを付けて表示にする
+            SwitchCanvas.SetActive (true);
         }
         
         //mainCameraの位置を取得(mainpoint)
