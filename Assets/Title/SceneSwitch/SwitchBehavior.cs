@@ -4,6 +4,44 @@ using UnityEngine;
 
 public class SwitchBehavior : MonoBehaviour
 {
+    private GameObject mainCamera;
+    private GameObject subCamera;
+    private GameObject Canvas;
+    private GameObject SwitchCanvas;
+    private int playerhp=1;
+    private int Enemyhp=0;
+    void start ()
+    {
+        mainCamera = GameObject.Find("MainCamera");
+        subCamera = GameObject.Find("subCamera");
+        Canvas = GameObject.Find("Canvas");
+        SwitchCanvas = GameObject.Find("SwitchCanvas");
+    }
+
+    void Update()
+    {
+        //プレイヤーHPが0の時
+        if(playerhp == 1) 
+        {
+            Canvas.SetActive(false);
+            SwitchCanvas.SetActive(true);
+            mainCamera.SetActive(false);
+            subCamera.SetActive(true);
+        }
+        //エネミーHPが0の時
+        else if(Enemyhp == 2)
+        {
+            Canvas.SetActive(false);
+            SwitchCanvas.SetActive(true);
+            subCamera.SetActive(false);
+            mainCamera.SetActive(true);
+        }
+        else
+        {
+
+        }
+    }
+    /*
     private int Enemyhp = 0;
     private int Playerhp = 1;
     void Start()
@@ -17,7 +55,6 @@ public class SwitchBehavior : MonoBehaviour
             GameObject SwitchCanvas = GameObject.Find ("SwitchCanvas");
             SwitchCanvas.SetActive(false);
         }
-        */
         
         //勝ったのが敵か自分かの分岐
 
@@ -67,11 +104,7 @@ public class SwitchBehavior : MonoBehaviour
             //チェックマークを付けて表示にする
             SwitchCanvas.SetActive (true);
         }
-        
-        //mainCameraの位置を取得(mainpoint)
-
-        //selectCameraの位置を取得(selectpoint)
-
-        //mainCameraをmainpointからselectpointに移動
     }
+    */
 }
+
