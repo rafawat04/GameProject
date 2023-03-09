@@ -57,8 +57,6 @@ public class AIController : MonoBehaviour
  
     private void Update()
     {
-        Debug.Log(navMeshAgent.isStopped);
-        
         EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
         if (!m_IsPatrol)
@@ -67,14 +65,22 @@ public class AIController : MonoBehaviour
             chasing = true;
              if(chasing)
                 {
-                    enemyShooting.Shoot();
+                    int n = Random.Range(0,10);
+                        if(n >2){
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
+                        }
+                        else
+                        {
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+                        }
+                    
+                    
                 }
         }
         else
         {
             Patroling();
         }
-
        
     }
  

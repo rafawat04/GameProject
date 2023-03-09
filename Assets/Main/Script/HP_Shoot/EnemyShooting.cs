@@ -9,6 +9,8 @@ public class EnemyShooting : MonoBehaviour {
     public int shotCount = 30;//1回に入れられる銃弾の数
     private float shotInterval;
 
+    public enum TargetLocation{PlayerBody, PlayerHead}
+
     //発砲時の火花エフェクト用
     public ParticleSystem ps;
     GameObject gunEffect;
@@ -34,7 +36,7 @@ public class EnemyShooting : MonoBehaviour {
         }
     }
 
-    public void Shoot()
+    public void Shoot(TargetLocation targetLocation)
     {
         shotInterval += 1;
 
@@ -43,6 +45,16 @@ public class EnemyShooting : MonoBehaviour {
             shotCount -= 1;
 
             GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
+
+            if(targetLocation == TargetLocation.PlayerHead)
+            {
+                bullet.transform.Translate(Vector3.up *0.2f);
+            }
+            else if(targetLocation == TargetLocation.PlayerBody)
+            {
+
+            }
+
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             bulletRb.AddForce(transform.forward * shotSpeed);
 
