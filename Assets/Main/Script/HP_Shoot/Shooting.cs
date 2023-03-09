@@ -28,7 +28,7 @@ public class Shooting : MonoBehaviour {
     void Update()
     {
         //「Mキー」で銃弾発射
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetMouseButton(0))
         {
             shotInterval += 1;
 
@@ -41,7 +41,7 @@ public class Shooting : MonoBehaviour {
                 bulletRb.AddForce(transform.forward * shotSpeed);
 
                 //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-                Destroy(bullet, 3.0f);
+                Destroy(bullet, 0.5f);
 
                 //火花エフェクトの再生
                 gunEffect.SetActive(true);

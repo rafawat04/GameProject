@@ -25,7 +25,16 @@ public class EnemyShooting : MonoBehaviour {
         ps.Stop();
     }
 
-    void Update()
+    IEnumerator Reload()
+    {
+        yield return new WaitForSeconds(2f);
+        if(shotCount == 0)
+        {
+            shotCount = 30;
+        }
+    }
+
+    public void Shoot()
     {
         shotInterval += 1;
 
@@ -38,11 +47,12 @@ public class EnemyShooting : MonoBehaviour {
             bulletRb.AddForce(transform.forward * shotSpeed);
 
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            Destroy(bullet, 3.0f);
+            Destroy(bullet, 0.5f);
 
             //火花エフェクトの再生
             gunEffect.SetActive(true);
             ps.Play();
+            
         }else
         {
             gunEffect.SetActive(false);
@@ -51,6 +61,9 @@ public class EnemyShooting : MonoBehaviour {
         }
 
         //銃弾セット
-        shotCount = 30;
+        if(shotCount == 0){
+            StartCoroutine(Reload());
+        }
+        
     }
 }
