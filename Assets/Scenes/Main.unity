@@ -20957,6 +20957,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoint: 100
+  myScore: 0
+  otherPerson: {fileID: 1037707621}
+  otherScore: 0
 --- !u!1 &437926218
 GameObject:
   m_ObjectHideFlags: 0
@@ -26287,7 +26290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 0
-  score: 0
+  Score: 0
   playerScoreText: {fileID: 1829989592}
   enemyScoreText: {fileID: 2076753000806127242}
   playerHPText: {fileID: 1767922110}
@@ -37550,7 +37553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.81, z: 0}
+  m_LocalPosition: {x: 0, y: 1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1353711258}
@@ -37756,6 +37759,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoint: 100
+  myScore: 0
+  otherPerson: {fileID: 415446578}
+  otherScore: 0
 --- !u!1 &1040501835
 GameObject:
   m_ObjectHideFlags: 0
@@ -62693,7 +62699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353711257}
   m_LocalRotation: {x: -0.008726465, y: 0, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 0.32, y: -0.37, z: 0.28}
+  m_LocalPosition: {x: 0.32, y: -0.53, z: 0.53}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1637078378}
@@ -87455,7 +87461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -90046,7 +90052,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4736188964184169588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

@@ -17,12 +17,8 @@ public class DestroyObject : MonoBehaviour {
 
         //衝突判定時、オブジェクトのTagがshellの場合
         if (other.CompareTag("Shell")){
-
             //HPクラスのDamage関数を呼び出す
             hp.Damage(damage);
-
-            //Bulletオブジェクトを破壊する.
-            // Destroy(other.gameObject);
         }
     }
 }

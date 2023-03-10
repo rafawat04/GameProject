@@ -59,7 +59,7 @@ public class EnemyShooting : MonoBehaviour {
             bulletRb.AddForce(transform.forward * shotSpeed);
 
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            Destroy(bullet, 0.5f);
+            // Destroy(bullet, 0.5f);
 
             //火花エフェクトの再生
             gunEffect.SetActive(true);
