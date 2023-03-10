@@ -20958,8 +20958,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoint: 100
   myScore: 0
-  otherPerson: {fileID: 1037707621}
-  otherScore: 0
 --- !u!1 &437926218
 GameObject:
   m_ObjectHideFlags: 0
@@ -37760,8 +37758,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoint: 100
   myScore: 0
-  otherPerson: {fileID: 415446578}
-  otherScore: 0
 --- !u!1 &1040501835
 GameObject:
   m_ObjectHideFlags: 0
@@ -85247,18 +85243,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &427182330858284603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8442980307298880849}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a25b040a00a583141bab644f85b4e1b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &463047640422662343
 GameObject:
   m_ObjectHideFlags: 0
@@ -91474,7 +91458,6 @@ GameObject:
   - component: {fileID: 8178435658984768987}
   - component: {fileID: 2913290698364710534}
   - component: {fileID: 7619864380729493906}
-  - component: {fileID: 427182330858284603}
   m_Layer: 5
   m_Name: Flush
   m_TagString: Untagged
