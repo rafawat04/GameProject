@@ -22,7 +22,7 @@ public class DestroyObject : MonoBehaviour {
             hp.Damage(damage);
 
             //Bulletオブジェクトを破壊する.
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
         }
     }
 }
