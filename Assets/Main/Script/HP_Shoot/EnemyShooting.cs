@@ -48,7 +48,9 @@ public class EnemyShooting : MonoBehaviour {
 
             if(targetLocation == TargetLocation.PlayerHead)
             {
-                bullet.transform.Translate(Vector3.up *0.2f);
+                bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
+                Vector3 newPosition = new Vector3(-5f, 0f, 0f);
+                bullet.transform.position = newPosition;
             }
             else if(targetLocation == TargetLocation.PlayerBody)
             {

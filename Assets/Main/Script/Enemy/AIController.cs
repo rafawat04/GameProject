@@ -65,13 +65,13 @@ public class AIController : MonoBehaviour
             chasing = true;
              if(chasing)
                 {
-                    int n = Random.Range(0,10);
-                        if(n >2){
-                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
+                    int n = Random.Range(0,100);
+                        if(n >0){
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
                         }
                         else
                         {
-                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
                         }
                     
                     
