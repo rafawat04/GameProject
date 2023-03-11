@@ -12,15 +12,16 @@ public class FlushController : MonoBehaviour
 		img.color = Color.clear;
 	}
 
-	void Update () 
-	{
-		if (Input.GetMouseButtonDown (0))
-		{
-			this.img.color = new Color (0.5f, 0f, 0f, 0.5f);
-		}
-		else
-		{
-			this.img.color = Color.Lerp (this.img.color, Color.clear, Time.deltaTime);
-		}
-	}
+	
+	// void Update () 
+	// {
+	// 	if (Input.GetMouseButtonDown (0))
+	// 	{
+	// 		this.img.color = new Color (0.5f, 0f, 0f, 0.5f);
+	// 	}
+	// 	else
+	// 	{
+	// 		this.img.color = Color.Lerp (this.img.color, Color.clear, Time.deltaTime);
+	// 	}
+	// }
 }
