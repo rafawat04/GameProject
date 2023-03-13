@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18320386, g: 0.2288565, b: 0.30646804, a: 1}
+  m_IndirectSpecularColor: {r: 0.18320367, g: 0.22885633, b: 0.30646744, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -88046,6 +88046,7 @@ Transform:
   - {fileID: 4268678969006024302}
   - {fileID: 6561716510458444430}
   - {fileID: 6413118835869203293}
+  - {fileID: 9032735388590569097}
   m_Father: {fileID: 3060156353723380978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -88941,7 +88942,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6622460469c4b0b40b4ce6725cef9c34, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -94664,6 +94665,7 @@ GameObject:
   - component: {fileID: 8257011385551140343}
   - component: {fileID: 8257011385551140346}
   - component: {fileID: 8257011385551140345}
+  - component: {fileID: 8257011385551140347}
   m_Layer: 0
   m_Name: EnemyObj
   m_TagString: Untagged
@@ -94736,7 +94738,40 @@ MonoBehaviour:
   boneSize: 1
   tripodSize: 1
   boneColor: {r: 0, g: 0, b: 1, a: 0.5}
-  m_Transforms: []
+  m_Transforms:
+  - {fileID: 8781206421092036428}
+  - {fileID: 2392359638751664275}
+  - {fileID: 3060156353723380978}
+  - {fileID: 3342946027700234069}
+  - {fileID: 5803585268908816257}
+  - {fileID: 7323378247212930366}
+  - {fileID: 6419605238763178297}
+  - {fileID: 3071234431028320434}
+  - {fileID: 8781206421092036428}
+  - {fileID: 8781206421092036428}
+  - {fileID: 8781206421092036428}
+  - {fileID: 8781206421092036428}
+  - {fileID: 8781206421092036428}
+  - {fileID: 8781206421092036428}
+--- !u!114 &8257011385551140347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257011385551140342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925884990798c54488bec3d1fc837c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowBoneMarker: 1
+  BoneMarkerSize: 0.1
+  mBonecolor: {r: 0, g: 0, b: 1, a: 1}
+  ShowLines: 1
+  mLinecolor: {r: 1, g: 0, b: 0, a: 1}
+  ShowBoneName: 0
+  mBoneNameColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &8277539184194620735
 GameObject:
   m_ObjectHideFlags: 0
@@ -95129,7 +95164,6 @@ Transform:
   - {fileID: 223054565631061295}
   - {fileID: 3765091066190183825}
   - {fileID: 4883334608585975000}
-  - {fileID: 9032735388590569097}
   m_Father: {fileID: 415446582}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95601,9 +95635,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9032735388590795433}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7142857, y: 0.7142857, z: 0.7142857}
+  m_LocalRotation: {x: 0.46633825, y: 0.6077439, z: 0.39130428, w: 0.50995773}
+  m_LocalPosition: {x: 0.35, y: 0.1, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 9032735388590569099}
   - {fileID: 9032735388590569103}
@@ -95612,9 +95646,9 @@ Transform:
   - {fileID: 9032735388590569089}
   - {fileID: 9032735388590569095}
   - {fileID: 9032735388590569093}
-  m_Father: {fileID: 8781206421092036428}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 2392359638751664275}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 100, z: 75}
 --- !u!4 &9032735388590569099
 Transform:
   m_ObjectHideFlags: 0
@@ -95740,7 +95774,7 @@ GameObject:
   - component: {fileID: 9032735388590569097}
   - component: {fileID: 9032735388600146283}
   m_Layer: 0
-  m_Name: WPN_AKM
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

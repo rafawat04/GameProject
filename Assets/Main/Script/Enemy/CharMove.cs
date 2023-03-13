@@ -29,7 +29,10 @@ public class CharMove : MonoBehaviour {
 		}
 		if (navMeshAgent.speed==AIController.speedRun) {
 			//shootモーション開始
-			animator.SetTrigger ("shoot");
+			animator.SetBool("run", true);
+			// animator.SetTrigger ("shoot");
+		}else {
+			animator.SetBool("run", false);
 		}
 	}	
 }
