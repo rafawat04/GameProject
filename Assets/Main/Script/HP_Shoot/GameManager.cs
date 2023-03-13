@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int HP;
-    public int Score;
+    public int playerHP;
+    public int enemyHP;
+    public int playerScore;
+    public int enemyScore;
     public Text playerScoreText;
     public Text enemyScoreText;
     public Text playerHPText;
@@ -25,26 +27,27 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //情報を取得
+        playerHP= player.GetComponent<HP>().hitPoint;      
+        playerScore= player.GetComponent<HP>().myScore;   
+        enemyHP= enemy.GetComponent<HP>().hitPoint;    
+        enemyScore= enemy.GetComponent<HP>().myScore;  
+
         //Player
-        HP= player.GetComponent<HP>().hitPoint;      //HP情報を取得
-        Score= player.GetComponent<HP>().myScore;      //Score情報を取得
-        playerHPText.text = "Player HP:"+HP;
+        playerHPText.text = "Player HP:"+playerHP;
         //Scoreの加算
-        if(HP==0)
+        if(playerHP==0)
         {
-            Score+=1;
+            enemyScore+=1;
         }
-        playerScoreText.text = "Player Score:"+Score;
+        enemyScoreText.text = "Enemy Score:"+enemyScore;
         //Enemy
-        HP= enemy.GetComponent<HP>().hitPoint;      //HP情報を取得
-        Score= enemy.GetComponent<HP>().myScore;      //Score情報を取得
-        enemyHPText.text = "Enemy HP :"+HP;
+        enemyHPText.text = "Enemy HP :"+enemyHP;
         //Scoreの加算
-        if(HP==0)
+        if(enemyHP==0)
         {
-            Score+=1;
+            playerScore+=1;
         }
-        enemyScoreText.text = "Enemy Score:"+Score;
+        playerScoreText.text = "Player Score:"+playerScore;
     }
 }
-

@@ -26287,8 +26287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20419e43c9a44dd1bfb227d96dcd593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 0
-  Score: 0
+  playerHP: 0
+  enemyHP: 0
+  playerScore: 0
+  enemyScore: 0
   playerScoreText: {fileID: 1829989592}
   enemyScoreText: {fileID: 2076753000806127242}
   playerHPText: {fileID: 1767922110}
@@ -84841,7 +84843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2101257207
 Transform:
   m_ObjectHideFlags: 0
@@ -87445,7 +87447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
