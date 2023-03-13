@@ -78,7 +78,7 @@ public class Shooting : MonoBehaviour {
         gunMachine.Play();
         //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
         // Destroy(bullet, 0.5f);
-
+        
         //火花エフェクトの再生
         gunEffect.SetActive(true);
         ps.Play();

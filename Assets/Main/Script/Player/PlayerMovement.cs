@@ -6,9 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
+    float timer = 0.0f;
+    float soundInterval = 1f;
+
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    public AudioSource footSteps;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -37,7 +41,22 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+        
+       if (move.magnitude > 0f)
+    {
+        footSteps.enabled = true;
 
+        if (Time.time > timer)
+        {
+            footSteps.Play();
+            timer = Time.time + soundInterval;
+        }
+    }
+    else
+    {
+        footSteps.enabled = false;
+    }
+        
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
