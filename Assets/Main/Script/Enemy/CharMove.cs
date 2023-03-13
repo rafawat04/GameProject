@@ -21,19 +21,17 @@ public class CharMove : MonoBehaviour {
 		//前進成分を取得(0~1),今回はバックはしない
 		// float acc = Mathf.Max (Input.GetAxis ("Vertical"), 0f);
 
-		if (navMeshAgent.speed==AIController.speedWalk) {
+		if (navMeshAgent.speed==AIController.speedWalk || navMeshAgent.speed==AIController.speedRun) {
 			//walkモーション開始
 			animator.SetBool("run", true);
 		} else {
 			animator.SetBool("run", false);
 		}
-		if (navMeshAgent.speed==AIController.speedRun) {
-			//shootモーション開始
-			animator.SetBool("run", true);
-			// animator.SetTrigger ("shoot");
-		}else {
-			animator.SetBool("run", false);
-		}
+		// if (navMeshAgent.speed==AIController.speedRun) {
+		// 	//shootモーション開始
+		// 	animator.SetTrigger ("shoot");
+		// }else {
+		// }
 	}	
 }
 
