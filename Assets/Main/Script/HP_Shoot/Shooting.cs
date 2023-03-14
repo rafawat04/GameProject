@@ -10,22 +10,25 @@ public class Shooting : MonoBehaviour {
     public int shotCount = 30;//1回に入れられる銃弾の数
     private float shotInterval;
 
+    public GameObject muzzleEffect;
+
+
     //発砲時の火花エフェクト用
-    public ParticleSystem ps;
-    GameObject gunEffect;
+    //  public ParticleSystem ps;
+    //  GameObject gunEffect;
 
     private bool isFiring = false;
 
     private void Start()
     {
-        //火花エフェクトの設定
-        gunEffect = GameObject.Find("GunEffect");
-        //GetComponentInChildrenで取得して変数psでパーティクルシステムを参照
-        ps = GetComponentInChildren<ParticleSystem>();
-        //Inspectorで設定したオブジェクトを非表示
-        gunEffect.SetActive(false);
-        //パーティクルシステムをストップ
-        ps.Stop();
+        // //火花エフェクトの設定
+        // gunEffect = GameObject.Find("GunEffect");
+        // //GetComponentInChildrenで取得して変数psでパーティクルシステムを参照
+        // ps = GetComponentInChildren<ParticleSystem>();
+        // // //Inspectorで設定したオブジェクトを非表示
+        // gunEffect.SetActive(false);
+        // // //パーティクルシステムをストップ
+        //  ps.Stop();
     }
 
     void Update()
@@ -44,20 +47,20 @@ public class Shooting : MonoBehaviour {
             bulletRb.AddForce(transform.forward * shotSpeed);
             gunMachine.Play();
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            // Destroy(bullet, 0.5f);
-
+            Destroy(bullet, 0.5f);
+            Instantiate(muzzleEffect, transform.position, Quaternion.Euler(-90f,0,0));
             //火花エフェクトの再生
-            gunEffect.SetActive(true);
-            ps.Play();
+            //gunEffect.SetActive(true);-
+            //ps.Play();
+           
 
-            // Set the time interval between shots to 0.1 seconds
-            shotInterval = 0.1f;
+            shotInterval =0.1f;
         }
         else
         {
-            gunEffect.SetActive(false);
+            // gunEffect.SetActive(false);
             //パーティクルシステムをストップ
-            ps.Stop();
+            //ps.Stop();
         }
     }
 
@@ -68,22 +71,7 @@ public class Shooting : MonoBehaviour {
     }
 }
 
-    void FireShot()
-    {
-        shotCount -= 1;
-
-        GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x - 90, transform.parent.eulerAngles.y, 0));
-        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-        bulletRb.AddForce(transform.forward * shotSpeed);
-        gunMachine.Play();
-        //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-        // Destroy(bullet, 0.5f);
-        
-        //火花エフェクトの再生
-        gunEffect.SetActive(true);
-        ps.Play();
-    }
-
+    
     //「Rキー」で銃弾セット
     void OnGUI()
     {
