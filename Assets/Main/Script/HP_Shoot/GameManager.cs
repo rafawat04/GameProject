@@ -97,8 +97,11 @@ public class GameManager : MonoBehaviour
         //マウスポインターのロックを解除
         Cursor.lockState = CursorLockMode.None;
         //サブカメラをアクティブに設定
-        mainCamera.SetActive(false);
-        Destroy(player);
+        if(player != null)
+        {
+            mainCamera.SetActive(false);
+            Destroy(player);
+        }
         subCamera.SetActive(true);
         //結果表示
         if(playerScore>=1)

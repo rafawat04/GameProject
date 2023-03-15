@@ -11,6 +11,8 @@ public class DestroyObject : MonoBehaviour {
     private HP hp;//HPクラス
     private Image img;//赤くする画像
     CameraShake cameraShake;
+    GameObject enemyObj; 
+    Animator animator;
 
     void Start()
     {
@@ -20,6 +22,8 @@ public class DestroyObject : MonoBehaviour {
         img = flush.GetComponent<Image>();
         img.color = Color.clear;
         cameraShake = attackedPerson.GetComponent<CameraShake>();
+        enemyObj = GameObject.Find("EnemyObj");
+        animator = enemyObj.GetComponent<Animator> ();
     }
 
     void Update()
@@ -40,6 +44,11 @@ public class DestroyObject : MonoBehaviour {
             {
                 img.color = new Color(0.4f, 0f, 0f, 0.4f);
                 cameraShake.Shake(0.25f, 0.1f);
+            }
+            // EnemyならHitモーション開始
+            if(attackedPerson.name=="Enemy")
+            {
+                animator.SetTrigger ("hit");
             }
         }
     }
