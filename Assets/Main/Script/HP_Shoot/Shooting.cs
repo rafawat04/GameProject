@@ -47,7 +47,7 @@ public class Shooting : MonoBehaviour {
             bulletRb.AddForce(transform.forward * shotSpeed);
             gunMachine.Play();
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            Destroy(bullet, 0.5f);
+            //Destroy(bullet, 0.5f);
             Instantiate(muzzleEffect, transform.position, Quaternion.identity);
             //火花エフェクトの再生
             //gunEffect.SetActive(true);-

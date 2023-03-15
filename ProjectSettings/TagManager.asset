@@ -92,6 +92,7 @@ TagManager:
   - Shell
   - Enemy
   - Projectile
+  - Obstacle
   layers:
   - Default
   - TransparentFX
