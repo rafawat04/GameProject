@@ -20,7 +20,7 @@ public class CharMove : MonoBehaviour {
 	void Update () {
 		//前進成分を取得(0~1),今回はバックはしない
 		// float acc = Mathf.Max (Input.GetAxis ("Vertical"), 0f);
-
+		// if()
 		if (navMeshAgent.speed>=AIController.speedRun) {
 			//runモーション開始
 			animator.SetBool("run", true);

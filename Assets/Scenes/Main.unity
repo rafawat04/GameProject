@@ -21572,6 +21572,7 @@ MonoBehaviour:
   gameOverLogo: {fileID: 4585429814571489022}
   restartButton: {fileID: 1806805952978583685}
   exitButton: {fileID: 9205295612871355956}
+  enemyObj: {fileID: 8257011385551140342}
 --- !u!4 &577972595
 Transform:
   m_ObjectHideFlags: 0
