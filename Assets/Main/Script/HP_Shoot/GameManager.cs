@@ -99,7 +99,8 @@ public class GameManager : MonoBehaviour
         if(playerScore>=1)
         {
             clearLogo.SetActive(true);
-        }else
+        }
+        if(enemyScore>=1)
         {
             gameOverLogo.SetActive(true);
         }
