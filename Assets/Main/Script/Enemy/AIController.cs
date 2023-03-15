@@ -10,7 +10,8 @@ public class AIController : MonoBehaviour
     public float speedWalk = 6;                     //  Walking speed, speed in the nav mesh agent
     public float speedRun = 9;                      //  Running speed
  
-    public float viewRadius = 15;                   //  Radius of the enemy view
+    public float viewRadius = 15;   
+    public float fieldOfView = 180;             //  Radius of the enemy view
     public float viewAngle = 90;                    //  Angle of the enemy view
     public LayerMask playerMask;                    //  To detect the player with the raycast
     public LayerMask obstacleMask;                  //  To detect the obstacles with the raycast
@@ -66,33 +67,30 @@ public class AIController : MonoBehaviour
         
  
         if (!m_IsPatrol)
+{
+    Chasing();
+    chasing = true;
+    if (chasing)
+    {
+        int n = Random.Range(0, 100);
+        if (n > 80)
         {
-            Chasing();
-            chasing = true;
-             if(chasing)
-                {
-                    int n = Random.Range(0,100);
-                        if(n >80){
-                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
-                        }
-                        else
-                        {
-                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
-                        }
-                    
-                    
-                }
+            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
         }
         else
         {
-           
-            Patroling();
-            
-               
+            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
         }
+        MeleeAttack();
+    }
+}
 
+        else
+        {
+            Patroling();
+             
+        }
         
-       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -105,23 +103,51 @@ public class AIController : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
- 
     private void Chasing()
     {
-        //  The enemy is chasing the player
-        m_PlayerNear = false;                       //  Set false that hte player is near because the enemy already sees the player
-        playerLastPosition = Vector3.zero;          //  Reset the player near position
- 
+        m_PlayerNear = false;
+        playerLastPosition = Vector3.zero;
+
+        // Get a vector from the enemy to the player
+        Vector3 toPlayer = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
+
+        // Check if the player is in front of the enemy
+        if (Vector3.Dot(transform.forward, toPlayer.normalized) > 0.5f)
+        {
+            // Get the angle between the enemy's forward direction and the vector to the player
+            float angle = Vector3.Angle(transform.forward, toPlayer.normalized);
+
+            // Check if the angle is less than or equal to the enemy's field of view
+            if (angle <= fieldOfView/2.0f)
+            {   
+                int n = Random.Range(0, 100);
+                if (n > 80)
+                {
+                    enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+                }
+                else
+                {
+                    enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
+                }
+            }
+        }
+
         if (!m_CaughtPlayer)
         {
             Move(speedRun);
-            navMeshAgent.SetDestination(m_PlayerPosition);          //  set the destination of the enemy to the player location
+
+            // Estimate the future position of the player based on their current velocity
+            Vector3 futurePlayerPosition = GameObject.FindGameObjectWithTag("Player").transform.position +
+                                            GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>().velocity * 0.5f;
+
+            // Set the destination of the enemy to the future player position
+            navMeshAgent.SetDestination(futurePlayerPosition);
         }
-        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
+
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-                if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
+            if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
             {
-                //  Check if the enemy is not near to the player, returns to patrol after the wait time delay
                 m_IsPatrol = true;
                 m_PlayerNear = false;
                 Move(speedWalk);
@@ -132,12 +158,45 @@ public class AIController : MonoBehaviour
             else
             {
                 if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 2.5f)
-                    //  Wait if the current position is not the player position
                     Stop();
                 m_WaitTime -= Time.deltaTime;
             }
         }
     }
+
+
+    // private void Chasing()
+    // {
+    //     //  The enemy is chasing the player
+    //     m_PlayerNear = false;                       //  Set false that hte player is near because the enemy already sees the player
+    //     playerLastPosition = Vector3.zero;          //  Reset the player near position
+ 
+    //     if (!m_CaughtPlayer)
+    //     {
+    //         Move(speedRun);
+    //         navMeshAgent.SetDestination(m_PlayerPosition);          //  set the destination of the enemy to the player location
+    //     }
+    //     if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
+    //     {
+    //             if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
+    //         {
+    //             //  Check if the enemy is not near to the player, returns to patrol after the wait time delay
+    //             m_IsPatrol = true;
+    //             m_PlayerNear = false;
+    //             Move(speedWalk);
+    //             m_TimeToRotate = timeToRotate;
+    //             m_WaitTime = startWaitTime;
+    //             navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+    //         }
+    //         else
+    //         {
+    //             if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 2.5f)
+    //                 //  Wait if the current position is not the player position
+    //                 Stop();
+    //             m_WaitTime -= Time.deltaTime;
+    //         }
+    //     }
+    // }
 
     // Shuffle an array using Fisher-Yates algorithm
     public static void Shuffle<T>(T[] array)
@@ -276,4 +335,13 @@ public class AIController : MonoBehaviour
             }
         }
     }
+
+    private void MeleeAttack()
+{
+    if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) <= 2.5f)
+    {
+        // Perform the melee attack
+        Debug.Log("Performing melee attack");
+    }
+}
 }
