@@ -48,24 +48,18 @@ public class EnemyShooting : MonoBehaviour {
 
             if(targetLocation == TargetLocation.PlayerHead)
             {
-                // bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
-                // Vector3 newPosition = new Vector3(-5f, 0f, 0f);
-                // bullet.transform.position = newPosition;
                 
                 //一時的に変更
                 bullet.transform.Rotate(-10f,0f,0f);//Bulletの見た目の角度調整
-                transform.Rotate(-0.1f,0f,0f);//Bulletの進む向きの調整
+                transform.Rotate(0f,0f,0f);//Bulletの進む向きの調整
             }
-            else if(targetLocation == TargetLocation.PlayerBody)
-            {
-
-            }
+            
 
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             bulletRb.AddForce(transform.forward * shotSpeed);
 
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            Destroy(bullet, 1f);
+            Destroy(bullet, 0.5f);
 
             //火花エフェクトの再生
             gunEffect.SetActive(true);

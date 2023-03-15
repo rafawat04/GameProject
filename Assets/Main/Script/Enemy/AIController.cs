@@ -38,7 +38,7 @@ public class AIController : MonoBehaviour
     bool m_PlayerNear;                              //  If the player is near, state of hearing
     bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
     bool m_CaughtPlayer;       
-    bool chasing;                     //  if the enemy has caught the player
+    bool chasing = false;           //  if the enemy has caught the player
  
     void Start()
     {   
@@ -66,26 +66,27 @@ public class AIController : MonoBehaviour
         EnviromentView();   
         
  
-        if (!m_IsPatrol)
-{
+    if (!m_IsPatrol)
+    {
     Chasing();
     chasing = true;
     if (chasing)
-    {
-        int n = Random.Range(0, 100);
-        if (n > 80)
         {
-            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+            
+            int n = Random.Range(0, 100);
+            if (n > 80)
+            {
+                enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+            }
+            else
+            {
+                enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
+            }
         }
-        else
-        {
-            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
-        }
-        MeleeAttack();
+        
     }
-}
 
-        else
+    else
         {
             Patroling();
              
@@ -93,16 +94,6 @@ public class AIController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Projectile")
-        {
-            isHit = true;
-            hitDirection = other.gameObject.transform.position - transform.position;
-            // Remove the projectile from the scene
-            Destroy(other.gameObject);
-        }
-    }
     private void Chasing()
     {
         m_PlayerNear = false;
@@ -118,10 +109,10 @@ public class AIController : MonoBehaviour
             float angle = Vector3.Angle(transform.forward, toPlayer.normalized);
 
             // Check if the angle is less than or equal to the enemy's field of view
-            if (angle <= fieldOfView/2.0f)
+            if (angle <= fieldOfView)
             {   
                 int n = Random.Range(0, 100);
-                if (n > 80)
+                if (n > 95)
                 {
                     enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
                 }
@@ -143,10 +134,16 @@ public class AIController : MonoBehaviour
             // Set the destination of the enemy to the future player position
             navMeshAgent.SetDestination(futurePlayerPosition);
         }
+        else
+        {
+            m_PlayerNear = false;
+            Move(speedWalk);
+            
+        }
 
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
+            if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 0.5f)
             {
                 m_IsPatrol = true;
                 m_PlayerNear = false;
@@ -164,39 +161,6 @@ public class AIController : MonoBehaviour
         }
     }
 
-
-    // private void Chasing()
-    // {
-    //     //  The enemy is chasing the player
-    //     m_PlayerNear = false;                       //  Set false that hte player is near because the enemy already sees the player
-    //     playerLastPosition = Vector3.zero;          //  Reset the player near position
- 
-    //     if (!m_CaughtPlayer)
-    //     {
-    //         Move(speedRun);
-    //         navMeshAgent.SetDestination(m_PlayerPosition);          //  set the destination of the enemy to the player location
-    //     }
-    //     if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
-    //     {
-    //             if (m_WaitTime <= 0 && !m_CaughtPlayer && Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 3f)
-    //         {
-    //             //  Check if the enemy is not near to the player, returns to patrol after the wait time delay
-    //             m_IsPatrol = true;
-    //             m_PlayerNear = false;
-    //             Move(speedWalk);
-    //             m_TimeToRotate = timeToRotate;
-    //             m_WaitTime = startWaitTime;
-    //             navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
-    //         }
-    //         else
-    //         {
-    //             if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 2.5f)
-    //                 //  Wait if the current position is not the player position
-    //                 Stop();
-    //             m_WaitTime -= Time.deltaTime;
-    //         }
-    //     }
-    // }
 
     // Shuffle an array using Fisher-Yates algorithm
     public static void Shuffle<T>(T[] array)
@@ -336,12 +300,5 @@ public class AIController : MonoBehaviour
         }
     }
 
-    private void MeleeAttack()
-{
-    if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) <= 2.5f)
-    {
-        // Perform the melee attack
-        Debug.Log("Performing melee attack");
-    }
-}
+
 }

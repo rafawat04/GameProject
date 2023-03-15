@@ -20881,10 +20881,10 @@ MonoBehaviour:
   navMeshAgent: {fileID: 415446583}
   startWaitTime: 1
   timeToRotate: 0.1
-  speedWalk: 10
-  speedRun: 24
-  viewRadius: 30
-  fieldOfView: 90
+  speedWalk: 1
+  speedRun: 8
+  viewRadius: 15
+  fieldOfView: 180
   viewAngle: 90
   playerMask:
     serializedVersion: 2
@@ -20893,9 +20893,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   meshResolution: 1
-  edgeIterations: 10
+  edgeIterations: 4
   edgeDistance: 0.5
-  rotationSpeed: 60
+  rotationSpeed: 30
   enemyShooting: {fileID: 1052301591}
   waypoints:
   - {fileID: 802362255}
@@ -28598,7 +28598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acea547547d0d40daa0ebf514392dba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 20
+  hitPoint: 200
   myScore: 0
 --- !u!114 &1037707626
 MonoBehaviour:
@@ -28619,7 +28619,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037707621}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -61506,7 +61506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &3475358003522174714
 NavMeshObstacle:
   m_ObjectHideFlags: 0

@@ -91,6 +91,7 @@ TagManager:
   - FxTemporaire
   - Shell
   - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX
