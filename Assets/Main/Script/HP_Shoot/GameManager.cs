@@ -71,7 +71,17 @@ public class GameManager : MonoBehaviour
         if(playerScore>=1 || enemyScore>=1){
             navMeshAgent.isStopped = true;
             navMeshAgent.speed = 0;
-            Invoke("changeResult", 5.0f);
+            if(playerScore>=1)
+            {
+                Destroy(enemy, 5f);
+                Invoke("changeResult", 5.0f);
+
+            }
+            if(enemyScore>=1)
+            {
+                Destroy(enemy);
+                changeResult();
+            }
         }
         else{
             //メインカメラをアクティブに設定

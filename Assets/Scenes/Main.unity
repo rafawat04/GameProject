@@ -61506,7 +61506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &3475358003522174714
 NavMeshObstacle:
   m_ObjectHideFlags: 0
