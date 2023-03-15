@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
     public GameObject restartButton;
     public GameObject exitButton;
 
-    public GameObject enemyObj;//アニメーション用
-    Animator animator;
+    // public GameObject enemyObj;//アニメーション用
+    // Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour
         gameOverLogo.SetActive(false);//結果を非表示
         restartButton.SetActive(false);//結果を非表示
         exitButton.SetActive(false);//結果を非表示
-        animator = enemyObj.GetComponent<Animator> ();//アニメーション
+
+        // animator = enemyObj.GetComponent<Animator> ();//アニメーション
     }
 
     // Update is called once per frame
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
         if(playerHP==0)
         {
             enemyScore+=1;
-            Destroy(player,6f);
+            // Destroy(player,6f);
         }
         enemyScoreText.text = "Enemy Score:"+enemyScore;
         //Enemy
@@ -64,8 +65,8 @@ public class GameManager : MonoBehaviour
         if(enemyHP==0)
         {
             playerScore+=1;
-            animator.SetTrigger("death");
-            Destroy(enemy,7f);
+            // animator.SetTrigger("death");
+            // Destroy(enemy,7f);
         }
         playerScoreText.text = "Player Score:"+playerScore;
 
