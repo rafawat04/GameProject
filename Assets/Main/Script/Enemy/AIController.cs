@@ -16,12 +16,17 @@ public class AIController : MonoBehaviour
     public LayerMask obstacleMask;                  //  To detect the obstacles with the raycast
     public float meshResolution = 1.0f;             //  How many rays will cast per degree
     public int edgeIterations = 4;                  //  Number of iterations to get a better performance of the mesh filter when the raycast hit an obstacule
-    public float edgeDistance = 0.5f;               //  Max distance to calcule the a minimun and a maximum raycast when hits something
+    public float edgeDistance = 0.5f; 
+
+    public float rotationSpeed =  30f;            //  Max distance to calcule the a minimun and a maximum raycast when hits something
     
     public EnemyShooting enemyShooting;
 
     public Transform[] waypoints;                   //  All the waypoints where the enemy patrols
-    int m_CurrentWaypointIndex;                     //  Current waypoint where the enemy is going to
+    int m_CurrentWaypointIndex;   
+    
+    private bool isHit = false;
+    private Vector3 hitDirection;                  //  Current waypoint where the enemy is going to
  
     Vector3 playerLastPosition = Vector3.zero;      //  Last position of the player when was near the enemy
     Vector3 m_PlayerPosition;                       //  Last position of the player when the player is seen by the enemy
@@ -57,9 +62,8 @@ public class AIController : MonoBehaviour
  
     private void Update()
     {
-        Debug.Log(navMeshAgent.isStopped);
+        EnviromentView();   
         
-        EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
  
         if (!m_IsPatrol)
         {
@@ -67,15 +71,39 @@ public class AIController : MonoBehaviour
             chasing = true;
              if(chasing)
                 {
-                    enemyShooting.Shoot();
+                    int n = Random.Range(0,100);
+                        if(n >80){
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerHead);
+                        }
+                        else
+                        {
+                            enemyShooting.Shoot(EnemyShooting.TargetLocation.PlayerBody);
+                        }
+                    
+                    
                 }
         }
         else
         {
+           
             Patroling();
+            
+               
         }
 
+        
        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Projectile")
+        {
+            isHit = true;
+            hitDirection = other.gameObject.transform.position - transform.position;
+            // Remove the projectile from the scene
+            Destroy(other.gameObject);
+        }
     }
  
     private void Chasing()
@@ -123,8 +151,10 @@ public class AIController : MonoBehaviour
         }
     }
 
+
     private void Patroling()
     {
+           
     if (m_PlayerNear)
     {
         // Check if the enemy detects the player nearby

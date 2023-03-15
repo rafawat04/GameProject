@@ -90,6 +90,7 @@ TagManager:
   - wall84
   - FxTemporaire
   - Shell
+  - Enemy
   layers:
   - Default
   - TransparentFX

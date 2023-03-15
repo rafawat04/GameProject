@@ -9,6 +9,8 @@ public class EnemyShooting : MonoBehaviour {
     public int shotCount = 30;//1回に入れられる銃弾の数
     private float shotInterval;
 
+    public enum TargetLocation{PlayerBody, PlayerHead}
+
     //発砲時の火花エフェクト用
     public ParticleSystem ps;
     GameObject gunEffect;
@@ -34,7 +36,7 @@ public class EnemyShooting : MonoBehaviour {
         }
     }
 
-    public void Shoot()
+    public void Shoot(TargetLocation targetLocation)
     {
         shotInterval += 1;
 
@@ -43,11 +45,27 @@ public class EnemyShooting : MonoBehaviour {
             shotCount -= 1;
 
             GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
+
+            if(targetLocation == TargetLocation.PlayerHead)
+            {
+                // bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x-90, transform.parent.eulerAngles.y,0));
+                // Vector3 newPosition = new Vector3(-5f, 0f, 0f);
+                // bullet.transform.position = newPosition;
+                
+                //一時的に変更
+                bullet.transform.Rotate(-10f,0f,0f);//Bulletの見た目の角度調整
+                transform.Rotate(-0.1f,0f,0f);//Bulletの進む向きの調整
+            }
+            else if(targetLocation == TargetLocation.PlayerBody)
+            {
+
+            }
+
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             bulletRb.AddForce(transform.forward * shotSpeed);
 
             //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
-            Destroy(bullet, 0.5f);
+            // Destroy(bullet, 0.5f);
 
             //火花エフェクトの再生
             gunEffect.SetActive(true);
