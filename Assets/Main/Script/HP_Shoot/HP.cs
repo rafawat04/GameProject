@@ -9,12 +9,14 @@ public class HP : MonoBehaviour {
 
     GameObject enemyObj;//アニメーション用
     GameObject enemy;//アニメーション用
+    HP enemyHP;
     Animator animator;
     
 	void Start() {
         enemy = GameObject.Find("Enemy");
         enemyObj = GameObject.Find("EnemyObj");
         animator = enemyObj.GetComponent<Animator> ();//アニメーション
+        enemyHP = enemy.GetComponent<HP> ();//アニメーション
     }
     
     // Update is called once per frame
@@ -29,7 +31,8 @@ public class HP : MonoBehaviour {
         if(hitPoint <= 0)
         {
             hitPoint = 0;
-            if(hitPoint == 0)
+            //EnemyのHPが0ならdeathのアニメーションを実行して消える
+            if(enemyHP.hitPoint == 0)
             {
                 animator.SetTrigger("death");
                 Destroy(enemy, 5f);

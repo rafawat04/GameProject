@@ -13,10 +13,12 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //空撃ちの時
+        Destroy(gameObject,0.5f);
     }
 
-    void OnTriggerEnter(Collider other){        
-        Destroy(gameObject, 1f);
+    void OnTriggerEnter(Collider other){
+            // 人や壁など何かに当たったとき
+            Destroy(gameObject);
     }
 }

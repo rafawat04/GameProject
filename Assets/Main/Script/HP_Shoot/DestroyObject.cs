@@ -10,7 +10,6 @@ public class DestroyObject : MonoBehaviour {
     public GameObject attackedPerson;//Bulletがあたったオブジェクト
     private HP hp;//HPクラス
     private Image img;//赤くする画像
-    // Camera cam;
     CameraShake cameraShake;
 
     void Start()
@@ -20,7 +19,6 @@ public class DestroyObject : MonoBehaviour {
         GameObject flush = GameObject.Find("Flush");
         img = flush.GetComponent<Image>();
         img.color = Color.clear;
-        // cameraShake = Camera.main.GetComponent<CameraShake>();
         cameraShake = attackedPerson.GetComponent<CameraShake>();
     }
 

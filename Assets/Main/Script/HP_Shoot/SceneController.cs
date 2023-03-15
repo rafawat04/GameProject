@@ -19,13 +19,11 @@ public class SceneController : MonoBehaviour
 
     public void ChangeTitleScene()
     {
-        // Debug.Log("change");
         SceneManager.LoadScene("Title");
     }
 
     public void ChangeMainScene()
     {
-        // Debug.Log("change");
         SceneManager.LoadScene("Main");
     }
 }

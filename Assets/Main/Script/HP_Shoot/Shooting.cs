@@ -33,7 +33,7 @@ public class Shooting : MonoBehaviour {
 
     void Update()
 {
-    //「Mキー」で銃弾発射
+    //「クリック」で銃弾発射
     if (Input.GetMouseButton(0))
     {
         shotInterval -= Time.deltaTime;
