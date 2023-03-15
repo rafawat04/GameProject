@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a5b06359cd436254f853dd8605fbe002
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Fladeo inline grunge
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9432456f7860b614eaf147f7c83220ea, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1f7d8f6eeb5b10e419913fbfb618b9af
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Fladeo inline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c15377f9f118510458c6d6ed6a7012f7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
