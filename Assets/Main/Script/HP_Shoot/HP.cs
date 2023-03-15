@@ -31,11 +31,9 @@ public class HP : MonoBehaviour {
             hitPoint = 0;
             if(hitPoint == 0)
             {
-                
                 animator.SetTrigger("death");
                 Destroy(enemy, 5f);
             }
-
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
     public GameObject restartButton;
     public GameObject exitButton;
 
+    NavMeshAgent navMeshAgent;
+
     // public GameObject enemyObj;//アニメーション用
     // Animator animator;
 
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
         exitButton.SetActive(false);//結果を非表示
 
         // animator = enemyObj.GetComponent<Animator> ();//アニメーション
+        navMeshAgent = enemy.GetComponent<NavMeshAgent> ();//Enemyストップ用
     }
 
     // Update is called once per frame
@@ -73,7 +77,9 @@ public class GameManager : MonoBehaviour
 
       
         if(playerScore>=1 || enemyScore>=1){
-            Invoke("changeResult", 7.0f);
+            navMeshAgent.isStopped = true;
+            navMeshAgent.speed = 0;
+            Invoke("changeResult", 5.0f);
         }
         else{
             //メインカメラをアクティブに設定
