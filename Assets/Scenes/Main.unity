@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18320367, g: 0.22885633, b: 0.30646744, a: 1}
+  m_IndirectSpecularColor: {r: 0.18320386, g: 0.2288565, b: 0.30646804, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8c2b7fd271eb349239f076746cd5e25c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b5ef2c60dcd174636a436c1d4620d54f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c28952424ed6748669a58a8d8516b537, type: 2}
 --- !u!1 &14754274
 GameObject:
   m_ObjectHideFlags: 0
@@ -20884,7 +20884,8 @@ MonoBehaviour:
   speedWalk: 10
   speedRun: 24
   viewRadius: 30
-  viewAngle: 180
+  fieldOfView: 90
+  viewAngle: 90
   playerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -28519,6 +28520,7 @@ GameObject:
   - component: {fileID: 1037707624}
   - component: {fileID: 1037707625}
   - component: {fileID: 1037707626}
+  - component: {fileID: 1037707627}
   m_Layer: 6
   m_Name: FirstPerson
   m_TagString: Player
@@ -28610,6 +28612,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037f601c9fc9ff8489c991f34a31813a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &1037707627
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037707621}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1044776289
 GameObject:
   m_ObjectHideFlags: 0
@@ -57037,7 +57061,7 @@ MonoBehaviour:
   gunMachine: {fileID: 1561909930}
   bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04, type: 3}
   shotSpeed: 1000
-  shotCount: 30
+  shotCount: 60
   muzzleEffect: {fileID: 3045305440486116490, guid: fb3642c3b066a4a6387e2aa81e76ab3c, type: 3}
 --- !u!1 &2075168133
 GameObject:
@@ -59999,15 +60023,15 @@ RectTransform:
   m_GameObject: {fileID: 2076752999957605049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 2076753000179134892}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -8}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 25, y: -25}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076752999957605051
 MonoBehaviour:
