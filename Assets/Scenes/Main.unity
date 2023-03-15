@@ -20933,7 +20933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acea547547d0d40daa0ebf514392dba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 20
+  hitPoint: 5
   myScore: 0
 --- !u!1 &437926218
 GameObject:
@@ -21571,6 +21571,7 @@ MonoBehaviour:
   gameOverLogo: {fileID: 4585429814571489022}
   restartButton: {fileID: 1806805952978583685}
   exitButton: {fileID: 9205295612871355956}
+  enemyObj: {fileID: 8257011385551140342}
 --- !u!4 &577972595
 Transform:
   m_ObjectHideFlags: 0
