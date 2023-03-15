@@ -42,58 +42,63 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //情報を取得
-        playerHP= player.GetComponent<HP>().hitPoint;      
-        playerScore= player.GetComponent<HP>().myScore;   
-        enemyHP= enemy.GetComponent<HP>().hitPoint;    
-        enemyScore= enemy.GetComponent<HP>().myScore;  
-
-        //Player
-        playerHPText.text = "Player HP:"+playerHP;
-        //Scoreの加算
-        if(playerHP==0)
+        if (enemy != null && player != null)
         {
-            enemyScore+=1;
-            // Destroy(player,6f);
-        }
-        enemyScoreText.text = "Enemy Score:"+enemyScore;
-        //Enemy
-        enemyHPText.text = "Enemy HP :"+enemyHP;
-        //Scoreの加算
-        if(enemyHP==0)
-        {
-            playerScore+=1;
-        }
-        playerScoreText.text = "Player Score:"+playerScore;
 
+            //情報を取得
+            playerHP= player.GetComponent<HP>().hitPoint;      
+            playerScore= player.GetComponent<HP>().myScore;   
+            enemyHP= enemy.GetComponent<HP>().hitPoint;    
+            enemyScore= enemy.GetComponent<HP>().myScore;  
 
-      
-        if(playerScore>=1 || enemyScore>=1){
-            navMeshAgent.isStopped = true;
-            navMeshAgent.speed = 0;
-            if(playerScore>=1)
+            //Player
+            playerHPText.text = "Player HP:"+playerHP;
+            //Scoreの加算
+            if(playerHP==0)
             {
-                Destroy(enemy, 5f);
-                Invoke("changeResult", 5.0f);
-
+                enemyScore+=1;
+                // Destroy(player,6f);
             }
-            if(enemyScore>=1)
+            enemyScoreText.text = "Enemy Score:"+enemyScore;
+            //Enemy
+            enemyHPText.text = "Enemy HP :"+enemyHP;
+            //Scoreの加算
+            if(enemyHP==0)
             {
-                Destroy(enemy);
-                changeResult();
+                playerScore+=1;
             }
-        }
-        else{
-            //メインカメラをアクティブに設定
-            subCamera.SetActive(false);
-            mainCamera.SetActive(true);
+            playerScoreText.text = "Player Score:"+playerScore;
+
+
+        
+            if(playerScore>=1 || enemyScore>=1){
+                navMeshAgent.isStopped = true;
+                navMeshAgent.speed = 0;
+                if(playerScore>=1)
+                {
+                    Invoke("changeResult", 5.0f);
+
+                }
+                if(enemyScore>=1)
+                {
+                    // Destroy(enemy);
+                    changeResult();
+                }
+            }
+            else{
+                //メインカメラをアクティブに設定
+                subCamera.SetActive(false);
+                mainCamera.SetActive(true);
+            }
         }
     }
     void changeResult(){
+        Destroy(enemy);
         //マウスポインターのロックを解除
         Cursor.lockState = CursorLockMode.None;
         //サブカメラをアクティブに設定
         mainCamera.SetActive(false);
+        Destroy(player);
         subCamera.SetActive(true);
         //結果表示
         if(playerScore>=1)

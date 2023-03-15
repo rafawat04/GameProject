@@ -33456,6 +33456,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04, type: 3}
   shotSpeed: 1500
   shotCount: 30
+  enemy: {fileID: 415446578}
   ps: {fileID: 0}
 --- !u!1 &1063360303
 GameObject:

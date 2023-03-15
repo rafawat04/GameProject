@@ -17,7 +17,7 @@ public class Shooting : MonoBehaviour {
     //  public ParticleSystem ps;
     //  GameObject gunEffect;
 
-    private bool isFiring = false;
+    // private bool isFiring = false;
 
     private void Start()
     {

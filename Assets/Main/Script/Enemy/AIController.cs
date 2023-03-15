@@ -26,7 +26,7 @@ public class AIController : MonoBehaviour
     public Transform[] waypoints;                   //  All the waypoints where the enemy patrols
     int m_CurrentWaypointIndex;   
     
-    private bool isHit = false;
+    // private bool isHit = false;
     private Vector3 hitDirection;                  //  Current waypoint where the enemy is going to
  
     Vector3 playerLastPosition = Vector3.zero;      //  Last position of the player when was near the enemy
