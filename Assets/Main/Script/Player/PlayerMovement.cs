@@ -7,9 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     float timer = 0.0f;
-    float soundInterval = 1f;
+    float soundInterval = 8f;
 
-    public float speed = 12f;
+    public float speed = 8f;
+    public float boostSpeed = 20f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public AudioSource footSteps;
@@ -35,35 +36,51 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
 
+        // Check if space bar is pressed down and adjust speed accordingly
+        if (Input.GetKey(KeyCode.Space))
+        {
+            speed = boostSpeed;
+        }
+        else
+        {
+            speed = 8f; // Set speed back to normal if space bar is not pressed down
+        }
+
         controller.Move(move * speed * Time.deltaTime);
-        
-       if (move.magnitude > 0f)
-    {
-        footSteps.enabled = true;
 
-        if (Time.time > timer)
+        if (move.magnitude > 0f)
         {
-            footSteps.Play();
-            timer = Time.time + soundInterval;
+            footSteps.enabled = true;
+
+            if (Time.time > timer)
+            {
+                footSteps.Play();
+                timer = Time.time + soundInterval;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                footSteps.Play();
+            }
         }
-    }
-    else
-    {
-        footSteps.enabled = false;
-    }
-        
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        else
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            footSteps.enabled = false;
         }
+        
 
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        // if (Input.GetButtonDown("Jump") && isGrounded)
+        // {
+        //     velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        // }
 
+        // velocity.y += gravity * Time.deltaTime;
+        // controller.Move(velocity * Time.deltaTime);
     }
 }
