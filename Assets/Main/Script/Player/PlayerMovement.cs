@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             footSteps.enabled = false;
         }
+        
 
         // if (Input.GetButtonDown("Jump") && isGrounded)
         // {

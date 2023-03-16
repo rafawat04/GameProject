@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour {
 
     public GameObject bulletPrefab;
+    public AudioSource shotSound;
     public float shotSpeed = 1500;//銃弾の速さ
     public int shotCount = 30;//1回に入れられる銃弾の数
     private float shotInterval;
@@ -59,7 +60,7 @@ public class EnemyShooting : MonoBehaviour {
                 }
                 Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
                 bulletRb.AddForce(transform.forward * shotSpeed);
-
+                shotSound.Play();
                 //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
                 //Destroy(bullet, 0.5f);
 
