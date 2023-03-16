@@ -28669,6 +28669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1037707624}
   speed: 12
+  boostSpeed: 20
   gravity: -9.81
   jumpHeight: 3
   footSteps: {fileID: 1269807648}
@@ -57364,7 +57365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2101257207
 Transform:
   m_ObjectHideFlags: 0
@@ -61216,7 +61217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
