@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         //空撃ちの時
-        Destroy(gameObject,0.5f);
+        Destroy(gameObject,1.5f);
     }
 
     void OnTriggerEnter(Collider other){

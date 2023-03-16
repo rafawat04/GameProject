@@ -33582,7 +33582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04, type: 3}
-  shotSpeed: 1500
+  shotSpeed: 1000
   shotCount: 30
   enemy: {fileID: 415446578}
   ps: {fileID: 0}
@@ -68605,7 +68605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &9032735388590795437
 GameObject:
   m_ObjectHideFlags: 0
