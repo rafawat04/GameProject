@@ -32,7 +32,7 @@ public class EnemyShooting : MonoBehaviour {
 
     IEnumerator Reload()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         if(shotCount == 0)
         {
             shotCount = 30;
@@ -45,7 +45,7 @@ public class EnemyShooting : MonoBehaviour {
         {
             shotInterval += 1;
 
-            if (shotInterval % 5 == 0 && shotCount > 0)
+            if (shotInterval % 50 == 0 && shotCount > 0)
             {
                 shotCount -= 1;
 
