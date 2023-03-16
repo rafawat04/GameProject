@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     float timer = 0.0f;
-    float soundInterval = 1f;
+    float soundInterval = 8f;
 
     public float speed = 12f;
     public float boostSpeed = 20f;
@@ -62,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 footSteps.Play();
                 timer = Time.time + soundInterval;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                footSteps.Play();
             }
         }
         else
