@@ -962,7 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFadeOut: 1
-  keep: 3
+  keep: 1.5
 --- !u!1 &1841725400
 GameObject:
   m_ObjectHideFlags: 0
