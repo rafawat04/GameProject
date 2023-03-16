@@ -11,12 +11,15 @@ public class HP : MonoBehaviour {
     GameObject enemy;//アニメーション用
     HP enemyHP;
     Animator animator;
+    LeftHandMatcher leftHandMatcher;
+    public bool isEnableIK = true; // IK制御有効化フラグ
     
 	void Start() {
         enemy = GameObject.Find("Enemy");
         enemyObj = GameObject.Find("EnemyObj");
         animator = enemyObj.GetComponent<Animator> ();//アニメーション
         enemyHP = enemy.GetComponent<HP> ();//アニメーション
+        leftHandMatcher = enemyObj.GetComponent<LeftHandMatcher> ();//アニメーション
     }
     
     // Update is called once per frame
@@ -35,6 +38,7 @@ public class HP : MonoBehaviour {
             if(enemyHP.hitPoint == 0)
             {
                 animator.SetTrigger("death");
+                leftHandMatcher.isEnableIK = false;
             }
         }
     }
