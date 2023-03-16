@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     float timer = 0.0f;
     float soundInterval = 8f;
 
-    public float speed = 12f;
+    public float speed = 8f;
     public float boostSpeed = 20f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            speed = 12f; // Set speed back to normal if space bar is not pressed down
+            speed = 8f; // Set speed back to normal if space bar is not pressed down
         }
 
         controller.Move(move * speed * Time.deltaTime);
