@@ -29,7 +29,7 @@ public class CharMove : MonoBehaviour {
 		}else {
 			animator.SetBool("run", false);
 		}
-		if (navMeshAgent.speed<=AIController.speedRun) {
+		if (navMeshAgent.speed<=AIController.speedRun && navMeshAgent.speed >= 0) {
 			//walkモーション開始
 			animator.SetBool("walk", true);
 		} else {

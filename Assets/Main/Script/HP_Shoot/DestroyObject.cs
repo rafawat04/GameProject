@@ -48,8 +48,9 @@ public class DestroyObject : MonoBehaviour {
             // EnemyならHitモーション開始
             if(attackedPerson.name=="Enemy")
             {
-                animator.SetTrigger ("hit");
+                animator.SetTrigger("hit");
             }
         }
     }
+
 }

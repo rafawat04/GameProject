@@ -20881,7 +20881,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 415446583}
   startWaitTime: 1
   timeToRotate: 0.1
-  speedWalk: 1
+  speedWalk: 4
   speedRun: 8
   viewRadius: 15
   fieldOfView: 180
