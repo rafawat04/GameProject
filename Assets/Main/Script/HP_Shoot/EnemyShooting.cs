@@ -9,7 +9,7 @@ public class EnemyShooting : MonoBehaviour {
     public int shotCount = 30;//1回に入れられる銃弾の数
     private float shotInterval;
     public GameObject enemy;
-    // private HP enemyHP;
+    private HP enemyHP;
 
     public enum TargetLocation{PlayerBody, PlayerHead}
 
@@ -27,7 +27,7 @@ public class EnemyShooting : MonoBehaviour {
         gunEffect.SetActive(false);
         //パーティクルシステムをストップ
         ps.Stop();
-        // enemyHP = parent.GetComponent<HP>();
+        enemyHP = enemy.GetComponent<HP>();
     }
 
     IEnumerator Reload()
@@ -41,7 +41,7 @@ public class EnemyShooting : MonoBehaviour {
 
     public void Shoot(TargetLocation targetLocation)
     {
-        if (enemy != null )
+        if (enemy != null && enemyHP.hitPoint > 0)
         {
             shotInterval += 1;
 
