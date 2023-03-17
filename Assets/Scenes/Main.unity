@@ -20882,8 +20882,8 @@ MonoBehaviour:
   navMeshAgent: {fileID: 415446583}
   startWaitTime: 1
   timeToRotate: 0.1
-  speedWalk: 8
-  speedRun: 16
+  speedWalk: 7
+  speedRun: 18
   viewRadius: 15
   fieldOfView: 180
   viewAngle: 90
@@ -20896,7 +20896,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 0.5
-  rotationSpeed: 30
+  rotationSpeed: 100
   enemyShooting: {fileID: 1052301591}
   waypoints:
   - {fileID: 802362255}
