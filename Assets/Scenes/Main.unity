@@ -20882,7 +20882,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 415446583}
   startWaitTime: 1
   timeToRotate: 0.1
-  speedWalk: 5
+  speedWalk: 8
   speedRun: 16
   viewRadius: 15
   fieldOfView: 180
@@ -21031,7 +21031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acea547547d0d40daa0ebf514392dba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 5
+  hitPoint: 50
   myScore: 0
 --- !u!1 &437926218
 GameObject:
@@ -28766,8 +28766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1037707624}
-  speed: 8
-  boostSpeed: 20
+  speed: 6
+  boostSpeed: 16
   gravity: -9.81
   jumpHeight: 3
   footSteps: {fileID: 1269807648}
@@ -28825,7 +28825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acea547547d0d40daa0ebf514392dba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 20
+  hitPoint: 50
   myScore: 0
 --- !u!114 &1037707626
 MonoBehaviour:
@@ -61668,7 +61668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
