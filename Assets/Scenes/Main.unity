@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 8c2b7fd271eb349239f076746cd5e25c,
-    type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8c2b7fd271eb349239f076746cd5e25c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -20839,7 +20838,7 @@ Transform:
   m_GameObject: {fileID: 415446578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.01, y: 1.5, z: -45.51}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1052301590}
   - {fileID: 8781206421092036428}
@@ -33779,8 +33778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa7e1834f3067845b27fd3116e04494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04,
-    type: 3}
+  bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04, type: 3}
   shotSound: {fileID: 415446585}
   shotSpeed: 1000
   shotCount: 30
@@ -57517,12 +57515,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunMachine: {fileID: 1037707628}
-  bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04,
-    type: 3}
+  bulletPrefab: {fileID: 9148245409081175942, guid: cf7ac895091a83c4f87213bcdfca8b04, type: 3}
   shotSpeed: 1000
   shotCount: 60
-  muzzleEffect: {fileID: 3045305440486116490, guid: fb3642c3b066a4a6387e2aa81e76ab3c,
-    type: 3}
+  muzzleEffect: {fileID: 3045305440486116490, guid: fb3642c3b066a4a6387e2aa81e76ab3c, type: 3}
 --- !u!1 &2075168133
 GameObject:
   m_ObjectHideFlags: 0
@@ -58178,8 +58174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 2164428446715975518, guid: d08af68ed1eb2fe40bc37560b1d91d5f,
-    type: 3}
+  wallPrefab: {fileID: 2164428446715975518, guid: d08af68ed1eb2fe40bc37560b1d91d5f, type: 3}
   spawnTags:
   - wall67
   - wall68
@@ -58418,8 +58413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 8359665963120472075, guid: 763c6b92aec944a4490156a057cc21f0,
-    type: 3}
+  wallPrefab: {fileID: 8359665963120472075, guid: 763c6b92aec944a4490156a057cc21f0, type: 3}
   spawnTags:
   - wall43
   - wall44
@@ -60004,8 +59998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 4461746824571989282, guid: 1a7157b95989f204e8ec5e84bb6b14da,
-    type: 3}
+  wallPrefab: {fileID: 4461746824571989282, guid: 1a7157b95989f204e8ec5e84bb6b14da, type: 3}
   spawnTags:
   - wall19
   - wall20
@@ -60320,8 +60313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 546802110583842117, guid: cd705b4dc72ae0c44ac3e5d3d5d1cb49,
-    type: 3}
+  wallPrefab: {fileID: 546802110583842117, guid: cd705b4dc72ae0c44ac3e5d3d5d1cb49, type: 3}
   spawnTags:
   - wall31
   - wall32
@@ -60959,8 +60951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 4352398056042796064, guid: c77b78ef11e17a741b19033c08e0ca49,
-    type: 3}
+  wallPrefab: {fileID: 4352398056042796064, guid: c77b78ef11e17a741b19033c08e0ca49, type: 3}
   spawnTags:
   - wall49
   - wall50
@@ -61020,8 +61011,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791737030643686526}
-  m_LocalRotation: {x: 0.000000022351747, y: -0.000000029802326, z: -0.000000020721929,
-    w: 1}
+  m_LocalRotation: {x: 0.000000022351747, y: -0.000000029802326, z: -0.000000020721929, w: 1}
   m_LocalPosition: {x: -0.14, y: 0.000000038146972, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -63009,8 +62999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 1822494636495518367, guid: 31b9b562c80296240882b0308571a7d7,
-    type: 3}
+  wallPrefab: {fileID: 1822494636495518367, guid: 31b9b562c80296240882b0308571a7d7, type: 3}
   spawnTags:
   - wall55
   - wall56
@@ -63218,8 +63207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 2407311018442397662, guid: f1a8fa8d51d88ca4bbbed35e78ae93c9,
-    type: 3}
+  wallPrefab: {fileID: 2407311018442397662, guid: f1a8fa8d51d88ca4bbbed35e78ae93c9, type: 3}
   spawnTags:
   - wall25
   - wall26
@@ -63320,8 +63308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 4286729215052969759, guid: aed370e17cc577b42b0f312fe43c810c,
-    type: 3}
+  wallPrefab: {fileID: 4286729215052969759, guid: aed370e17cc577b42b0f312fe43c810c, type: 3}
   spawnTags:
   - wall79
   - wall80
@@ -64386,8 +64373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 5208627193468251904, guid: 92636a88993fe944a80037f2d5e74d5d,
-    type: 3}
+  wallPrefab: {fileID: 5208627193468251904, guid: 92636a88993fe944a80037f2d5e74d5d, type: 3}
   spawnTags:
   - wall7
   - wall8
@@ -64850,8 +64836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 5766887952266219511, guid: 79cefece0b803204ba9cccb25c837dd2,
-    type: 3}
+  wallPrefab: {fileID: 5766887952266219511, guid: 79cefece0b803204ba9cccb25c837dd2, type: 3}
   spawnTags:
   - wall61
   - wall62
@@ -65043,8 +65028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 126515396685891399, guid: ad87d21124014374c96935059ca232e6,
-    type: 3}
+  wallPrefab: {fileID: 126515396685891399, guid: ad87d21124014374c96935059ca232e6, type: 3}
   spawnTags:
   - wall13
   - wall14
@@ -65082,8 +65066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 8374017144870664701, guid: 4b5db27df9b042d4eb744fcb4ad9b4c7,
-    type: 3}
+  wallPrefab: {fileID: 8374017144870664701, guid: 4b5db27df9b042d4eb744fcb4ad9b4c7, type: 3}
   spawnTags:
   - wall73
   - wall74
@@ -65360,8 +65343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 2423727727387093953, guid: 2aebb58b82c58d041b283a57831c9255,
-    type: 3}
+  wallPrefab: {fileID: 2423727727387093953, guid: 2aebb58b82c58d041b283a57831c9255, type: 3}
   spawnTags:
   - wall37
   - wall38
@@ -66233,8 +66215,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39085975638502411}
-  m_LocalRotation: {x: -0.11762719, y: -0.000000018524526, z: -0.0000000019597624,
-    w: 0.99305785}
+  m_LocalRotation: {x: -0.11762719, y: -0.000000018524526, z: -0.0000000019597624, w: 0.99305785}
   m_LocalPosition: {x: 0.13999988, y: 0.0000002670288, z: -0.00000030517577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -70002,8 +69983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c312850d0a9404a8432243fc6e297e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallPrefab: {fileID: 8746893043025015529, guid: d24d33a3cf2ab9b47b3f857f7e6cc511,
-    type: 3}
+  wallPrefab: {fileID: 8746893043025015529, guid: d24d33a3cf2ab9b47b3f857f7e6cc511, type: 3}
   spawnTags:
   - wall1
   - wall2
