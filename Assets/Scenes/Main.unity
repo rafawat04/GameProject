@@ -20886,7 +20886,7 @@ MonoBehaviour:
   speedRun: 18
   viewRadius: 15
   fieldOfView: 180
-  viewAngle: 90
+  viewAngle: 360
   playerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -61668,7 +61668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!208 &2977149605607085148
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -62087,7 +62087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!208 &3475358003522174714
 NavMeshObstacle:
   m_ObjectHideFlags: 0
